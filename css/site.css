@@ -4,7 +4,6 @@
     width: 1190px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
 }
 body {
     font-family: "Muller";
@@ -69,6 +68,7 @@ a {
     max-width: 100%;
     color: #fff;
     height: 900px;
+    padding: 0 20px;
 }
 .header-top {
     display: flex;
@@ -85,6 +85,11 @@ a {
 .logo__text {
     padding-left: 10px;
     padding-top: 3px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .nav__list {
     display: flex;
@@ -122,6 +127,9 @@ a {
 }
 .header-content__paragraph {
     margin-bottom: 60px;
+}
+.nav__menu-icon {
+    display: none;
 }
 
 /*--------- Стили для секции info ---------*/

@@ -8,6 +8,7 @@
     <title>Стрекоза</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
 </head>
@@ -32,7 +33,10 @@
                         <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Партнерство</a></li>
-                        <li class="nav__item nav__item_entrance"><a href="#" class="nav__link">Войти</a></li>
+                    </ul>
+                    <ul class="nav__list">
+                        <li class="nav__item nav__media nav__item_entrance"><a href="#" class="nav__link">Войти</a></li>
+                        <li class="nav__item nav__media"><img class="nav__menu-icon" src="images/menu-icon.png" alt=""></li>
                         <li class="nav__item demo__item"><a href="#" class="demo__bg">Запросить Демо</a></li>
                     </ul>
                 </nav>
@@ -59,6 +63,7 @@
             <div class="info-block">
                 <img class="info-block__icon" src="images/icon1.png" alt="">
                 <span class="info-block__quan">200 руб</span>
+                <?php include ('./tool.php'); ?>
                 <h4 class="info-block__heading">приносим с 1 заказа Почтой России</h4>
                 <p class="info-block__text">за счет повышения и ускорения выкупа наложенного платежа.</p>
             </div>
