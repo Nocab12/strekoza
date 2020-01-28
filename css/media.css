@@ -15,6 +15,55 @@
     .nav__item.nav__media {
         display: block;
     }
+    .company-cost {
+        justify-content: space-around;
+    }
+    .our-work {
+        background: url('../images/m-work-bg.png') no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .work__head {
+        padding: 0 30px;
+        margin-top: 150px;
+    }
+    .work-block {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .work__line {
+        display: none;
+    }
+    .work-wrap {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 30px;
+        width: 90%;
+        margin-bottom: 70px;
+    }
+    .work-description__text {
+        max-width: 100%;
+    }
+    .work-description__heading {
+        margin-top: 0;
+    }
+    .work-description {
+        padding-left: 40px;
+    }
+    .work-wrap__img {
+        flex-direction: column;
+    }
+    .work__arrow_bottom {
+        display: block;
+        margin-top: 35px;
+    }
+    .work-block__line-center {
+        margin-bottom: 0;
+    }
+    .work-graph {
+        justify-content: flex-start;
+        margin-left: 3%;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -38,14 +87,123 @@
     .header-content__img img{
         max-width: 371px;
     }
+    .info-block__quan {
+        display: block;
+        height: 80px;
+    }
+    .btn-company-block {
+        justify-content: center;
+        padding: 23px 8px;
+    }
+    .company-cost__input {
+        width: 350px;
+    }
+    .price-block {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .price-wrap {
+        margin-top: 30px;
+        margin-right: 0;
+    }
 
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+    .info-wrap {
+        flex-direction: column;
+        width: 95%;
+        position: relative;
+    }
+    .info-block {
+        flex-direction: row;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .info-block__media-info {
+        margin-left: 25px;
+    }
+    .info-block__quan {
+        height: auto;
+    }
+    .info-block__heading {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .info-block__text {
+        width: auto;
+        max-width: 280px;
+    }
+    .info-block__seo {
+        padding-top: 5px;
+    }
+    .info-arrow {
+        display: none;
+    }
+    .info-arrow-top {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .info-arrow-bottom {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -21%;
+    }
+    .info-strekoza {
+        display: block;
+        position: absolute;
+        top: 78%;
+        right: -10.5%;
+        transform: rotate(-90deg);
+        font-size: 26px;
+        color: #5568FF;
+    }
+    .company-cost__block {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .company-cost__input {
+        width: 100%;
+    }
+    .company__text_block {
+        display: inline-block;
+    }
+    .btn-company {
+        border: none;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #CCCCCC;
+        width: 34%;
+    }
+    .btn-company:hover {
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #5568FF;
+    }
+    .btn-company.active {
+        background: #fff;
+        color: #5568FF;
+    }
+    .our-work {
+        background: url('../images/s-our-work.png') no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
 
 
+}
+@media (max-width: 600px) {
+    .info-arrow-top, .info-arrow-bottom, .info-strekoza {
+        display: none;
+    }
+    h2 {
+        font-size: 22px;
+    }
 }
 
 /* Portrait phones and smaller */
@@ -62,8 +220,8 @@
     h1 {
         font-size: 35px;
     }
-    a {
-        font-size: 12px;
+    a, p {
+        font-size: 14px;
     }
     .logo__text {
         font-size: 20px;
@@ -78,7 +236,7 @@
         font-size: 16px;
     }
     .header-content__paragraph {
-        font-size: 12px;
+        font-size: 14px;
     }
     .btn-overall {
         max-width: 200px;
@@ -86,10 +244,84 @@
     .nav__item_entrance {
         margin-left: 25px;
     }
+    .info {
+        padding: 30px 20px;
+    }
+    .info-wrap {
+        width: 100%;
+    }
+    .info-strekoza-media {
+        display: block;
+        font-size: 22px;
+        color: #5568FF;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .info-block__quan {
+        font-size: 22px;
+    }
+    .info-block__heading {
+        font-size: 18px;
+    }
+    .info-block__text {
+        font-size: 14px;
+    }
+    .info-wrap_indent {
+        margin-top: 0;
+    }
+    .info-block {
+        padding: 0;
+    }
+    .btn-company {
+        font-size: 14px;
+        width: auto;
+        padding-right: 30px;
+    }
+    .company-cost__label {
+        font-size: 14px;
+    }
+    .price-wrap {
+        padding: 24px 20px;
+    }
+    .price__quan {
+        font-size: 16px;
+    }
+    .price__description {
+        font-size: 22px;
+    }
+    .price__sub {
+        font-size: 14px;
+    }
+    .price__details {
+        font-size: 14px;
+    }
+    .btn-overall {
+        font-size: 14px;
+    }
+    .work-description__heading, .work-graph__heading {
+        font-size: 18px;
+    }
+    .work-wrap, .work__head {
+        width: 88%;
+        padding: 0;
+    }
+    .work__arrow_bottom {
+        display: none;
+    }
+    .work-description__heading-icon {
+        width: 100%;
+    }
+    .work-graph__btn_indent {
+        margin-bottom: 35px;
+    }
+
+
 
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
-
+    .btn-company {
+        padding-right: 11px;
+    }
 }

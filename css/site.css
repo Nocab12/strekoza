@@ -103,7 +103,7 @@ a {
     margin-left: 25px;
 }
 .nav__item_entrance {
-    margin-left: 95px;
+    margin-left: 85px;
 }
 .demo__item {
     margin-left: 30px;
@@ -148,7 +148,9 @@ a {
 .info-block {
     display: flex;
     flex-direction: column;
-    max-width: 270px;
+    max-width: 310px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .info-block__icon {
     width: 44px;
@@ -187,6 +189,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    padding: 0 20px;
 }
 .arrow-left {
     display: flex;
@@ -197,7 +200,8 @@ a {
     flex-direction: column;
 }
 .info-arrow_width {
-    width: 329px;
+    width: 100%;
+    max-width: 329px;
 }
 .arrow-bottom_indet {
     margin-bottom: 12px;
@@ -205,8 +209,14 @@ a {
 .arrow-top_indet {
     margin-top: 16px;
 }
+.info-strekoza, .info-arrow-top, .info-arrow-bottom, .info-strekoza-media {
+    display: none;
+}
 
-/*--------- Стили для секции тип компании ---------*/
+/*--------- Стили для секции type company ---------*/
+.type-company {
+    padding: 0 20px;
+}
 .line-border {
     margin: 45px 0;
     max-width: 100%;
@@ -245,8 +255,12 @@ a {
 }
 .company-cost {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 82px;
+    margin-top: 62px;
+}
+.company-cost__block {
+    margin-top: 20px;
 }
 .company-cost__label {
     display: block;
@@ -294,6 +308,10 @@ a {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-right: 25px;
+    border: 1px solid transparent;
+}
+.price-wrap:hover {
+    border: 1px solid #5568FF;
 }
 .price-wrap:last-child {
     margin-right: 0;
@@ -326,6 +344,9 @@ a {
 .price__btn-overall {
     margin: 0 auto;
 }
+.company__text_block {
+    display: block;
+}
 
 /*--------- Стили для секции наша работа ---------*/
 .our-work {
@@ -333,6 +354,7 @@ a {
     background-size: cover;
     height: 1960px;
     color: #fff;
+    padding: 0 20px;
 }
 .work-padding {
     padding: 320px 0;
@@ -386,7 +408,6 @@ a {
 }
 .work-description__text {
     margin-top: 15px;
-    font-size: 18px;
     width: 100%;
     max-width: 332px;
 }
@@ -408,7 +429,9 @@ a {
     margin-top: 15px;
     margin-bottom: 70px;
 }
-
+.work__arrow_bottom {
+    display: none;
+}
 /*--------- Стили для секции ab-test ---------*/
 
 .ab-test {

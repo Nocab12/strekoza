@@ -59,12 +59,13 @@
 
 <section class="info">
     <div class="container">
+        <h5><span class="strekoza info-strekoza-media">С<span class="trek">трек</span>оза</span></h5>
         <div class="info-wrap">
             <div class="info-block">
                 <div class="info-block__media">
                     <img class="info-block__icon" src="images/icon1.png" alt="">
                 </div>
-                <div class="info-block__media">
+                <div class="info-block__media-info">
                     <span class="info-block__quan">200 руб</span>
                     <h4 class="info-block__heading">приносим с 1 заказа Почтой России</h4>
                     <p class="info-block__text">за счет повышения и ускорения выкупа наложенного платежа.</p>
@@ -74,33 +75,34 @@
                 <div class="info-block__media">
                     <img class="info-block__icon" src="images/icon2.png" alt="">
                 </div>
-                <div class="info-block__media">
+                <div class="info-block__media-info">
                     <span class="info-block__quan">15 руб</span>
                     <h4 class="info-block__heading">экономим на 1 доставке Почтой России</h4>
-                    <p class="info-block__text">за счет повышения и ускорения выкупа наложенного платежа.</p>
+                    <p class="info-block__text">за счет снижения возвратов.</p>
                 </div>
-
             </div>
             <div class="info-block">
                 <div class="info-block__media">
                     <img class="info-block__icon" src="images/icon3.png" alt="">
                 </div>
-                <div class="info-block__media">
+                <div class="info-block__media-info">
                     <span class="info-block__quan">1 новый заказ</span>
                     <h4 class="info-block__heading">с 20 отправленных заказов</h4>
-                    <p class="info-block__text">за счет повышения и ускорения выкупа наложенного платежа.</p>
+                    <p class="info-block__text">генерируем за счет товарных рекомендаций  в уведомлениях о доставке и постпродажных рассылках.</p>
                 </div>
             </div>
             <div class="info-block">
                 <div class="info-block__media">
                     <img class="info-block__icon" src="images/icon4.png" alt="">
                 </div>
-                <div class="info-block__media">
+                <div class="info-block__media-info">
                     <span class="info-block__quan">1 отзыв</span>
                     <h4 class="info-block__heading">с 10 доставленных заказов</h4>
-                    <p class="info-block__text">за счет повышения и ускорения выкупа наложенного платежа.</p>
+                    <p class="info-block__text">собираем, связываясь с клиентом сразу после получения заказа.</p>
                 </div>
             </div>
+            <img class="info-arrow-top" src="images/info-arrow-top.png" alt="">
+            <span class="strekoza info-strekoza">С<span class="trek">трек</span>оза</span>
         </div>
         <!----------------- Недоделанный блок со стрелками  ----------------->
         <div class="info-arrow">
@@ -119,21 +121,29 @@
                 <div class="info-block__icon">
                     <img class="info-block__seo" src="images/icon5.png" alt="">
                 </div>
-
-                <p class="info-block__text">Полезно для SEO за счет публикации отзывов.</p>
+                <div class="info-block__media-info">
+                    <p class="info-block__text">Полезно для SEO за счет публикации отзывов.</p>
+                </div>
             </div>
             <div class="info-block">
                 <img class="info-block__icon" src="images/icon6.png" alt="">
-                <p class="info-block__text">Снижает нагрузку на колл-центр</p>
+                <div class="info-block__media-info">
+                    <p class="info-block__text">Снижает нагрузку на колл-центр</p>
+                </div>
             </div>
             <div class="info-block">
                 <img class="info-block__icon" src="images/icon7.png" alt="">
-                <p class="info-block__text">Помогает контролировать доставку</p>
+                <div class="info-block__media-info">
+                    <p class="info-block__text">Помогает контролировать доставку</p>
+                </div>
             </div>
             <div class="info-block">
                 <img class="info-block__icon" src="images/icon8.png" alt="">
-                <p class="info-block__text">Удобна для получателей заказов</p>
+                <div class="info-block__media-info">
+                    <p class="info-block__text">Удобна для получателей заказов</p>
+                </div>
             </div>
+            <img class="info-arrow-bottom" src="images/info-arrow-bottom.png" alt="">
         </div>
     </div>
 
@@ -151,29 +161,27 @@
         </div>
         <div class="company-cost">
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c1">Месячный объем <br> предоплаченных заказов </label>
+                <label class="company-cost__label" for="c1">Месячный объем <span class="company__text_block"> предоплаченных заказов </span> </label>
                 <input type="text" id="c1" class="company-cost__input" value="10 000">
             </div>
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c2">Месячный объем посылок Почты <br>России с наложенным платежом</label>
+                <label class="company-cost__label" for="c2">Месячный объем посылок Почты <span class="company__text_block"> России с наложенным платежом </span></label>
                 <input type="text" id="c2" class="company-cost__input" value="10 000">
             </div>
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c3">Месячный объем доставок курьерскими <br> службами с оплатой при получении</label>
+                <label class="company-cost__label" for="c3">Месячный объем доставок курьерскими <span class="company__text_block"> службами с оплатой при получении </span></label>
                 <input type="text" id="c3" class="company-cost__input" value="10 000">
             </div>
-        </div>
-        <div class="company-cost">
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c4">Выкуп наложенного платежа <br> Почты России в прошлом месяце</label>
+                <label class="company-cost__label" for="c4">Выкуп наложенного платежа <span class="company__text_block"> Почты России в прошлом месяце</span></label>
                 <input type="text" id="c4" class="company-cost__input" value="85%">
             </div>
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c5">Средний чек <br> заказа</label>
+                <label class="company-cost__label" for="c5">Средний чек <span class="company__text_block"> заказа</span></label>
                 <input type="text" id="c5" class="company-cost__input" value="10 000">
             </div>
             <div class="company-cost__block">
-                <label class="company-cost__label" for="c6">Тратите на информирование <br> об 1 посылке</label>
+                <label class="company-cost__label" for="c6">Тратите на информирование <span class="company__text_block"> об 1 посылке</span></label>
                 <input type="text" id="c6" class="company-cost__input" value="10 000">
             </div>
         </div>
@@ -224,6 +232,7 @@
                 <div class="work-wrap__img">
                     <img src="images/adjust-icon.png" alt="">
                     <img class="work__line" src="images/work-line.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading">Настройка</p>
@@ -236,6 +245,7 @@
                 <div class="work-wrap__img">
                     <img src="images/box-icon.png" alt="">
                     <img class="work__line" src="images/work-line.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading">Загрузка посылок</p>
@@ -246,6 +256,7 @@
             <div class="work-wrap">
                 <div class="work-wrap__img">
                     <img src="images/brain-icon.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading work_underline">Скоринг <span class="work-description__heading-icon"></span></p>
@@ -255,24 +266,25 @@
             </div>
         </div>
         <div class="work-block work-block__line-center">
-            <img src="images/work-big-line.png" alt="">
+            <img class="work__line" src="images/work-big-line.png" alt="">
         </div>
         <div class="work-block">
             <div class="work-wrap">
                 <div class="work-wrap__img">
                     <img src="images/ab-icon.png" alt="">
                     <img class="work__line" src="images/work-line.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading work_underline">Распределение на AB группы <span class="work-description__heading-icon"></span></p>
-                    <p class="work-description__text">Посылки случайным образом делятся между группами. В одной - ваша текущая цепочка, в другой - наша.
-                    </p>
+                    <p class="work-description__text">Посылки случайным образом делятся между группами. В одной - ваша текущая цепочка, в другой - наша.</p>
                 </div>
             </div>
             <div class="work-wrap">
                 <div class="work-wrap__img">
                     <img src="images/wallet-icon.png" alt="">
                     <img class="work__line" src="images/work-line.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading work_underline">Гарантия от PimPay <span class="work-description__heading-icon"></span></p>
@@ -283,6 +295,7 @@
             <div class="work-wrap">
                 <div class="work-wrap__img">
                     <img src="images/tv-icon.png" alt="">
+                    <img class="work__arrow_bottom" src="images/work-arrow-bottom.png" alt="">
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading">Мониторинг </p>
@@ -292,7 +305,7 @@
             </div>
         </div>
         <div class="work-block work-block__line-right">
-            <img src="images/work-normal-line.png" alt="">
+            <img class="work__line" src="images/work-normal-line.png" alt="">
         </div>
         <div class="work-graph">
             <div class="work-graph__img">
@@ -301,7 +314,7 @@
             <div class="work-graph__desctiption">
                 <p class="work-graph__heading">Подведение итогов</p>
                 <p class="work-graph__text">Когда посылки в группах А и B получили финальный статус (выкуп или возврат), видим результат нашей работы.</p>
-                <a href="#" class="btn-overall">Узнать подробности</a>
+                <a href="#" class="btn-overall work-graph__btn_indent">Узнать подробности</a>
             </div>
         </div>
     </div>
