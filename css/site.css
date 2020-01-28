@@ -411,26 +411,20 @@ a {
     width: 100%;
     max-width: 332px;
 }
-.work-graph {
-    display: flex;
-    align-items: flex-start;
+.work-graph__center {
     justify-content: center;
-    margin-left: 5%;
+}
+.work-graph__flex {
+    display: flex;
 }
 .work-graph__heading {
-    font-size: 22px;
-    font-weight: 500;
+    margin-top: 0;
 }
-.work-graph__desctiption {
-    margin-left: 30px;
-    width: 50%;
+.work-graph__img_indent {
+    margin-right: 30px;
 }
-.work-graph__text {
-    margin-top: 15px;
-    margin-bottom: 70px;
-}
-.work__arrow_bottom {
-    display: none;
+.work-graph__btn_indent {
+    margin-top: 30px;
 }
 /*--------- Стили для секции ab-test ---------*/
 

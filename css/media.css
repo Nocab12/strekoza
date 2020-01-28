@@ -60,9 +60,8 @@
     .work-block__line-center {
         margin-bottom: 0;
     }
-    .work-graph {
-        justify-content: flex-start;
-        margin-left: 3%;
+    .work-graph__description {
+        padding-left: 0;
     }
 }
 
@@ -110,7 +109,7 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .info-wrap {
         flex-direction: column;
@@ -306,7 +305,7 @@
     .btn-overall {
         font-size: 14px;
     }
-    .work-description__heading, .work-graph__heading {
+    .work-description__heading {
         font-size: 18px;
     }
     .work-wrap, .work__head {
@@ -329,18 +328,16 @@
     .work-wrap {
         margin-bottom: 20px;
     }
-    .work-graph__desctiption {
-        width: 100%;
-    }
     .work-block__line-right {
         margin-bottom: 0;
     }
     .work-block__line-right {
         margin-bottom: 10px;
     }
-    .work-graph__text {
-        margin-bottom: 30px;
+    .work-graph__img_indent {
+        margin-right: 0;
     }
+
 
 
 
