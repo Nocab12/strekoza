@@ -63,6 +63,18 @@
     .work-graph__description {
         padding-left: 0;
     }
+    .ab-test-block {
+        justify-content: center;
+    }
+    .ab-test .container h2.ab-test__head, .ab-test .container h2.ab-test__head + p {
+        text-align: center;
+    }
+    .ab-test-wrap img {
+        width: 100%;
+    }
+    .delivery-services-block {
+        justify-content: center;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -104,6 +116,17 @@
     .price-wrap {
         margin-top: 30px;
         margin-right: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .delivery__base-img img {
+        height: auto;
+        width: 100%;
+    }
+    .delivery__minor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
@@ -173,6 +196,9 @@
     }
     .company__text_block {
         display: inline-block;
+    }
+    .price-wrap {
+        max-width: 100%;
     }
     .btn-company {
         border: none;
@@ -337,7 +363,9 @@
     .work-graph__img_indent {
         margin-right: 0;
     }
-
+    .delivery__minor-img {
+        justify-content: center;
+    }
 
 
 

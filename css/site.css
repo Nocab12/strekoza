@@ -430,6 +430,7 @@ a {
 
 .ab-test {
     margin: 50px 0;
+    padding: 0 20px;
 }
 .ab-test__head {
     margin-bottom: 20px;
@@ -441,14 +442,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .ab-test-wrap {
-    width: 33%;
+    width: 100%;
+    max-width: 380px;
     margin-top: 50px;
 }
 .ab-test-wrap img {
-    width: 100%;
-    max-width: 100%;
+    /*width: 100%;*/
+    /*max-width: 100%;*/
     height: 270px;
 }
 .ab-test__title {
@@ -477,10 +480,13 @@ a {
 }
 
 /*--------- Стили для секции delivery-services-block ---------*/
-
+.delivery-services {
+    padding: 0 20px;
+}
 .delivery-services-block {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 .delivery__base-img {
     margin-left: -10px;
@@ -491,11 +497,16 @@ a {
 .delivery__minor-img {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+.delivery-services__head {
+    text-align: center;
 }
 .delivery__link {
     color: #5568FF;
     font-size: 18px;
     padding-left: 11px;
+    display: block;
 }
 
 /*--------- Стили для секции integration ---------*/
