@@ -10,7 +10,51 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            /*width: 50%;*/
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -405,9 +449,9 @@
                 </div>
             </div>
         </div>
-        <div class="ab-test-line">
+        <div class="ab-test__block-line">
             <div class="ab-test__line"></div>
-            <a href="#" class="btn-overall">Хочу эксперементировать!</a>
+                <a href="#" class="btn-overall">Хочу эксперементировать!</a>
             <div class="ab-test__line"></div>
         </div>
 
@@ -418,28 +462,28 @@
     <div class="container">
         <h2 class="delivery-services__head">Службы доставки</h2>
         <div class="delivery-services-block">
-            <div class="delivery__base-img">
-                <img src="images/base-img.png" alt="">
-                <a href="#" class="delivery__link">Есть скоринг</a>
-            </div>
-            <div class="delivery__minor">
-                <div class="delivery__minor-img">
-                    <img src="images/minor-img-1.png" alt="">
-                    <img src="images/minor-img-2.png" alt="">
-                    <img src="images/minor-img-3.png" alt="">
-                    <img src="images/minor-img-4.png" alt="">
-                    <img src="images/minor-img-5.png" alt="">
-                    <img src="images/minor-img-6.png" alt="">
-                    <img src="images/minor-img-7.png" alt="">
-                    <img src="images/minor-img-8.png" alt="">
-                    <img src="images/minor-img-9.png" alt="">
-                </div>
-            </div>
-            <a href="#" class="delivery__link">Скоринга пока нет</a>
+            <ul class="delivery__base">
+                <li><img src="images/base-img.png" alt=""></li>
+                <li><a href="#" class="delivery__link">Есть скоринг</a></li>
+            </ul>
+            <ul class="delivery__minor">
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-1.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-2.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-3.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-4.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-5.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-6.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-7.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-8.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-9.png" alt=""></li>
+                <li><a href="#" class="delivery__link">Скоринга пока нет</a></li>
+            </ul>
         </div>
     </div>
+
 </section>
 
+<!-- slider-integration
 <section class="integration">
     <div class="container">
         <h2>Готовые интеграции</h2>
@@ -455,6 +499,7 @@
         </div>
     </div>
 </section>
+-->
 
 <section class="history">
     <div class="container history-padding">
@@ -462,12 +507,14 @@
             <h2>Истории успеха и 1 провала</h2>
             <a href="#" class="btn-overall btn-transparent">Рассказать еще кейсы?</a>
         </div>
-        <div class="slider-history">
+
+        <div class="js-test-slider slider">
             <img src="images/intagration1.png" alt="">
             <img src="images/intagration2.png" alt="">
             <img src="images/intagration3.png" alt="">
             <img src="images/intagration4.png" alt="">
         </div>
+
         <h2 class="white_color history-title">За последние сутки</h2>
         <div class="day-block">
             <div class="day-wrap">
@@ -476,7 +523,7 @@
             </div>
             <div class="day-wrap">
                 <span class="day-wrap__number">555</span>
-                <span class="day-wrap__text">Отправлено текстовых <br> уведомлений</span>
+                <span class="day-wrap__text">Отправлено текстовых <span class="day-wrap__br"> уведомлений</span></span>
             </div>
             <div class="day-wrap">
                 <span class="day-wrap__number">65645</span>
@@ -543,6 +590,7 @@
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Блог</a></li>
                 </ul>
             </div>
+            <div class="footer-line"></div>
             <div class="footer-tel">
                 <ul>
                     <li class="nav__footer_indent footer__number">8 800 555 1743</li>
@@ -551,17 +599,64 @@
                 </ul>
             </div>
             <div class="footer-copyright">
-                <div class="footer-copyright__sup">
-                    <span class="footer__sup">почтатех</span>
-                    <span class="footer__member">Участник корпоративного акселератора Почты России</span>
-                </div>
-                <div class="footer-copyright__date">
-                    <span>Стрекоза 2020г.</span>
-                </div>
+                <span class="footer__sup">почтатех</span>
+                <span class="footer__member">Участник корпоративного акселератора Почты России</span>
+                <span class="footer__date">Стрекоза 2020г.</span>
             </div>
         </div>
     </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <section class="js-test-slider slider">-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/350x300?text=1">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/200x300?text=2">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/100x300?text=3">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/200x300?text=4">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/350x300?text=5">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <img src="http://placehold.it/300x300?text=6">-->
+<!--        </div>-->
+<!--    </section>-->
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="plugins/slick/slick.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/add.js"></script>
+
 
 </body>
 

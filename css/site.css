@@ -49,7 +49,7 @@ a {
     width: 100%;
     max-width: 276px;
     text-align: center;
-    padding: 18px 0;
+    padding: 18px 20px;
     background: #EF5F2E;
     border-radius: 3px;
     color: #fff;
@@ -59,7 +59,7 @@ a {
 }
 .btn-overall-small {
     width: 100%;
-    max-width: 246px;
+    max-width: 206px;
 }
 /*--------- Стили для header ---------*/
 .header-section {
@@ -467,14 +467,15 @@ a {
     font-weight: 500;
     margin-top: 20px;
 }
-.ab-test-line {
+.ab-test__block-line {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
 }
 .ab-test__line {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     height: 1px;
     background: #ccc;
 }
@@ -482,33 +483,38 @@ a {
 /*--------- Стили для секции delivery-services-block ---------*/
 .delivery-services {
     padding: 0 20px;
+    margin-bottom: 30px;
+}
+.delivery-services__head {
+    margin-bottom: 30px;
 }
 .delivery-services-block {
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-.delivery__base-img {
-    margin-left: -10px;
-}
-.delivery__base-img img {
-    height: 445px;
-}
-.delivery__minor-img {
-    display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.delivery-services__head {
-    text-align: center;
+.delivery__base {
+    width: 48%;
+}
+.delivery__base img{
+    width: 100%;
+}
+.delivery__minor {
+    width: 53%;
+}
+.delivery__item {
+    display: inline-block;
+    width: 30%;
+}
+.delivery__item-img {
+    width: 100%;
+    height: auto;
 }
 .delivery__link {
-    color: #5568FF;
     font-size: 18px;
-    padding-left: 11px;
-    display: block;
+    color: #5568FF;
+    margin-left: 15px;
 }
-
 /*--------- Стили для секции integration ---------*/
 
 .integration {
@@ -527,7 +533,8 @@ a {
     background: url("../images/history-bg.png") no-repeat;
     background-size: cover;
     max-width: 100%;
-
+    padding: 0 20px;
+    background-position-y: 21%;
 }
 .history-head {
     display: flex;
@@ -562,6 +569,9 @@ a {
     font-size: 22px;
     color: #fff;
 }
+.day-wrap__br {
+    display: block;
+}
 .step-head {
     margin-top: 160px;
     position: relative;
@@ -577,8 +587,9 @@ a {
 .step-wrap {
     background: #fff;
     padding: 20px 30px;
-    width: 44%;
+    width: 47%;
     display: inline-block;
+    margin-right: 20px;
 }
 .step-wrap__top {
     display: flex;
@@ -606,6 +617,7 @@ a {
 /*--------- Стили для footer ---------*/
 .footer-bg {
     background: #2E3CB0;
+    padding: 0 20px;
 }
 .footer-content {
     padding-top: 350px;
@@ -629,6 +641,9 @@ a {
 }
 .footer-copyright {
     margin-top: 70px;
+}
+.footer-line {
+    display: none;
 }
 .nav__footer_indent {
     margin-bottom: 20px;

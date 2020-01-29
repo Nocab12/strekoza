@@ -72,9 +72,33 @@
     .ab-test-wrap img {
         width: 100%;
     }
-    .delivery-services-block {
-        justify-content: center;
+    .history {
+        background: url("../images/m-history-bg.png") no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 1500px;
+        padding: 0 20px;
     }
+    .step-block {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .step-wrap {
+        margin-top: 40px;
+        margin-right: 0;
+        width: 75%;
+    }
+    .step-wrap:first-child {
+        margin-top: 0;
+    }
+    .history-title {
+        padding-top: 100px;
+    }
+    .footer-content {
+        padding-top: 550px;
+    }
+
 }
 
 /* Portrait tablets and small desktops */
@@ -119,14 +143,41 @@
         width: 100%;
         max-width: 400px;
     }
-    .delivery__base-img img {
-        height: auto;
+    .footer-menu {
         width: 100%;
     }
-    .delivery__minor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .footer-copyright {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+        order: 0;
+        margin-top: 0;
+    }
+    .footer-tel {
+        order: 2;
+    }
+    .footer__member {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .footer-line {
+        display: block;
+        width: 100%;
+        opacity: 0.2;
+        border: 1px solid #FFFFFF;
+        margin-bottom: 30px;
+    }
+    .day-block {
+        flex-direction: column;
+    }
+    .day-wrap__text {
+        margin-left: 15px;
+    }
+    .day-wrap__number {
+        display: inline-block;
+    }
+    .day-wrap__br {
+        display: inline-block;
     }
 
 }
@@ -227,6 +278,22 @@
     .work__head {
         margin-top: 0;
     }
+    .delivery-services-block {
+        flex-wrap: wrap;
+    }
+    .delivery__base {
+        width: 97%;
+    }
+    .delivery__minor {
+        width: 100%;
+    }
+    .delivery__item {
+        width: 32%;
+    }
+    .step-wrap {
+        width: 95%;
+    }
+
 
 
 }
@@ -272,7 +339,7 @@
         font-size: 14px;
     }
     .btn-overall {
-        max-width: 200px;
+        max-width: 190px;
     }
     .nav__item_entrance {
         margin-left: 25px;
@@ -363,8 +430,11 @@
     .work-graph__img_indent {
         margin-right: 0;
     }
-    .delivery__minor-img {
+    .ab-test__block-line {
         justify-content: center;
+    }
+    .ab-test__line {
+        display: none;
     }
 
 
