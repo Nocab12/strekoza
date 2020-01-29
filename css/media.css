@@ -304,6 +304,14 @@
     h2 {
         font-size: 22px;
     }
+    .footer-copyright {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-tel {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 /* Portrait phones and smaller */
@@ -435,6 +443,12 @@
     }
     .ab-test__line {
         display: none;
+    }
+    .footer-menu {
+        flex-wrap: wrap;
+    }
+    .nav__footer_width {
+        width: 50%;
     }
 
 
