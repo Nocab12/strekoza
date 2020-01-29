@@ -68,13 +68,15 @@ a {
     max-width: 100%;
     color: #fff;
     height: 900px;
-    padding: 0 20px;
 }
 .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 .header-logo {
     display: flex;
@@ -102,6 +104,10 @@ a {
 .nav__item {
     margin-left: 25px;
 }
+
+.nav__link:hover  {
+    text-shadow: 0 0 .9px #fff, 0 0 .9px #fff, 0 0 .9px #fff;
+}
 .nav__item_entrance {
     margin-left: 85px;
 }
@@ -118,6 +124,9 @@ a {
     justify-content: space-between;
     margin-top: 84px;
 }
+.header-content_padding {
+    padding: 0 20px;
+}
 .header-content__text {
     width: 485px;
     max-width: 100%;
@@ -131,7 +140,23 @@ a {
 .nav__menu-icon {
     display: none;
 }
-
+.css-header-fixed {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 5px 5px -5px #333;
+    z-index: 1;
+}
+.css-header-fixed .strekoza {
+    color: #5568FF;
+}
+.css-header-fixed .nav__link {
+    color: #000;
+}
+.css-header-fixed .logo__icon_violet path {
+    fill: #5568FF;
+}
 /*--------- Стили для секции info ---------*/
 
 .info {
@@ -302,7 +327,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 282px;
     padding: 48px 42px;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
@@ -388,6 +412,9 @@ a {
 }
 .work__line {
     margin-left: 15px;
+}
+.work__arrow_bottom {
+    display: none;
 }
 .work-description__heading {
     font-size: 22px;

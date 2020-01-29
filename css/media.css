@@ -22,8 +22,17 @@
 }
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
+    .header-top {
+        padding: 20px;
+    }
     .nav__menu-icon {
         display: block;
+        background: url('../images/menu-icon-white.png');
+        width: 33px;
+        height: 22px;
+    }
+    .css-header-fixed .nav__menu-icon{
+        background: url('../images/menu-icon-black.png');
     }
     .nav__item {
         display: none;
