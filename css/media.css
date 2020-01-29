@@ -16,6 +16,9 @@
         background: #5568FF;
         padding: 0 20px;
     }
+    .history-title {
+        padding-top: 50px;
+    }
 }
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
@@ -314,6 +317,7 @@
     .day-wrap__text {
         font-size: 18px;
     }
+
 
 
 
