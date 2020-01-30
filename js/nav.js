@@ -1,3 +1,18 @@
+$(document).ready(function () {
+
+
+});
+$(window).resize(function(){
+
+        $(document).width();
+        if($(document).width() <= 1182) {
+            $('.nav__menu-icon.add-toggle').addClass('toggle');
+        } else {
+            $('.nav__menu-icon.add-toggle').removeClass('toggle');
+        }
+
+});
+
 (function($) {
     var $main_nav = $('#main-nav');
     var $toggle = $('.toggle');
@@ -5,11 +20,12 @@
     var defaultData = {
         maxWidth: false,
         customToggle: $toggle,
-        navTitle: 'All Categories',
+        navTitle: 'Меню',
         levelTitles: true,
         pushContent: '#container',
         insertClose: 2,
-        closeLevels: false
+        closeLevels: false,
+        position: 'right'
     };
 
     // add new items to original nav
@@ -77,4 +93,6 @@
             update(removeData);
         }
     });
+
 })(jQuery);
+
