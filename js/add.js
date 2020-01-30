@@ -13,5 +13,16 @@ $(document).ready(function () {
     $(window).scroll(function () {
         ScroolHeader();
     });
+    $('.js-nav-link').hover(function () {
+        var tetris = $(this).next();
+        if(tetris.is(":visible")) {
+
+        } else {
+            tetris.show();
+            tetris.mouseleave(function(){
+                $('.nav-sub').stop().slideUp();
+            });
+        }
+    });
 
 });

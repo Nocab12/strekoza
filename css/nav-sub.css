@@ -1,5 +1,5 @@
 html.hc-nav-yscroll {
-    overflow-y: scroll
+
 }
 
 body.hc-nav-open {
@@ -539,14 +539,6 @@ body.hc-nav-open {
     transform: translate(-50%, -50%) rotate(-135deg)
 }
 
-html, body, div, span, header, ul, li, a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
 
 
 
@@ -573,13 +565,12 @@ html, body, div, span, header, ul, li, a {
     display: none
 }
 
-header {
-    position: relative;
-    padding: 50px 0 20px
+
+
+
+.second-nav li a, .first-nav li, .bottom-nav li a {
+    font-family: sans-serif;
 }
-
-
-
 header .git svg {
     width: 15px;
     height: 15px;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css?v=1.1">
-    <link rel="stylesheet" type="text/css" href="demo.css">
+    <link rel="stylesheet" type="text/css" href="css/nav-sub.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
     <style type="text/css">
         html, body {
@@ -43,14 +43,14 @@
         }
 
 
-        .slick-slide {
-            transition: all ease-in-out .3s;
-            opacity: .2;
-        }
+        /*.slick-slide {*/
+        /*    transition: all ease-in-out .3s;*/
+        /*    opacity: .2;*/
+        /*}*/
 
-        .slick-active {
-            opacity: .5;
-        }
+        /*.slick-active {*/
+        /*    opacity: .5;*/
+        /*}*/
 
         .slick-current {
             opacity: 1;
@@ -86,8 +86,48 @@
             <div class="header-menu">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link nav_active">Платформа</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                        <li class="nav__item">
+                            <a href="#" class="js-nav-link nav__link nav_active">Платформа</a>
+                            <ul class="nav-sub">
+                                <li class="nav-sub__flex">
+                                    <ul class="nav-sub__width">
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Гарантия</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Delivery marketing</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Скоринг</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">AB тестирование</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">CRM</a></li>
+                                    </ul>
+                                    <ul class="nav-sub__width">
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Информирование</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Отзывы</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Повторные продажи</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Безопасность</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Блог</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="js-nav-link nav__link">Цены</a>
+                            <ul class="nav-sub">
+                                <li class="nav-sub__flex">
+                                    <ul class="nav-sub__width">
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Гарантия</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Delivery marketing</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Скоринг</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">AB тестирование</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">CRM</a></li>
+                                    </ul>
+                                    <ul class="nav-sub__width">
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Информирование</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Отзывы</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Повторные продажи</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Безопасность</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Блог</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Партнерство</a></li>
@@ -101,20 +141,22 @@
             </div>
         </div>
     </div>
-
-    <div class="container header-content_padding">
-        <div class="header-content">
-            <div class="header-content__text">
-                <h1>С<span class="trek">трек</span>оза</h1>
-                <h3 class="header-content__delivery">Delivery marketing платформа и агентство</h3>
-                <p class="header-content__paragraph">Повысим выкуп наложенного платежа, привлечем дополнительные лиды, соберем отзывы за счет AI-персонализации и AB тестирования коммуникации на этапе доставки и после получения заказа.</p>
-                <a class="btn-overall btn-overall-small" href="#">Узнать подробнее</a>
-            </div>
-            <div class="header-content__img">
-                <img src="images/hc-img.png" alt="">
+    <div class="header-section">
+        <div class="container header-content_padding">
+            <div class="header-content">
+                <div class="header-content__text">
+                    <h1>С<span class="trek">трек</span>оза</h1>
+                    <h3 class="header-content__delivery">Delivery marketing платформа и агентство</h3>
+                    <p class="header-content__paragraph">Повысим выкуп наложенного платежа, привлечем дополнительные лиды, соберем отзывы за счет AI-персонализации и AB тестирования коммуникации на этапе доставки и после получения заказа.</p>
+                    <a class="btn-overall btn-overall-small" href="#">Узнать подробнее</a>
+                </div>
+                <div class="header-content__img">
+                    <img src="images/hc-img.png" alt="">
+                </div>
             </div>
         </div>
     </div>
+
 
 </header>
 
@@ -500,26 +542,48 @@
 
 </section>
 
-<!-- slider-integration
+
 <section class="integration">
     <div class="container">
         <h2>Готовые интеграции</h2>
-        <div class="slider-integration">
-            <img src="images/intagration1.png" alt="">
-            <img src="images/intagration2.png" alt="">
-            <img src="images/intagration3.png" alt="">
-            <img src="images/intagration4.png" alt="">
-            <img src="images/intagration5.png" alt="">
-            <img src="images/intagration6.png" alt="">
-            <img src="images/intagration7.png" alt="">
-            <img src="images/intagration8.png" alt="">
+        <div class="js-slider-integration slider-integration slider">
+            <div class="slider-integration__flex">
+                <img src="images/intagration1.png" alt="">
+                <img src="images/intagration2.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration3.png" alt="">
+                <img src="images/intagration4.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration5.png" alt="">
+                <img src="images/intagration6.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration7.png" alt="">
+                <img src="images/intagration8.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration1.png" alt="">
+                <img src="images/intagration2.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration3.png" alt="">
+                <img src="images/intagration4.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration5.png" alt="">
+                <img src="images/intagration6.png" alt="">
+            </div>
+            <div class="slider-integration__flex">
+                <img src="images/intagration7.png" alt="">
+                <img src="images/intagration8.png" alt="">
+            </div>
         </div>
     </div>
 </section>
--->
-<section class="sl-success">
 
-</section>
+
 <section class="history">
     <div class="history-bg">
         <div class="container">
@@ -527,11 +591,15 @@
                 <h2>Истории успеха и 1 провала</h2>
                 <a href="#" class="btn-overall btn-transparent">Рассказать еще кейсы?</a>
             </div>
-            <div class="js-test-slider slider">
-                <img src="images/intagration1.png" alt="">
-                <img src="images/intagration2.png" alt="">
-                <img src="images/intagration3.png" alt="">
-                <img src="images/intagration4.png" alt="">
+            <div class="js-slider-history slider-history slider">
+                <div class="slider-history__flex"><img src="images/everad.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-toys.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-hr.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-shop.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/everad.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-toys.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-hr.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/sl-shop.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -586,11 +654,7 @@
         </div>
     </div>
 </section>
-<!--<section class="history">-->
-<!--    <div class="container history-padding">-->
-<!--        -->
-<!--    </div>-->
-<!--</section>-->
+
 
 <footer class="footer-bg">
     <div class="container">
@@ -644,9 +708,6 @@
         <ul class="first-nav">
             <li class="search">
                 <div class="form-container">
-<!--                    <form class="search-form" action="https://www.google.com/search" target="_blank" method="get">-->
-<!--                        <input type="text" name="q" placeholder="Search..." autocomplete="off">-->
-<!--                    </form>-->
                 </div>
             </li>
         </ul>
@@ -715,7 +776,7 @@
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="plugins/slick/slick.js" charset="utf-8" ></script>
-<script type="text/javascript" src="hc-offcanvas-nav.js" charset="utf-8" ></script>
+<script type="text/javascript" src="js/hc-offcanvas-nav.js" charset="utf-8" ></script>
 <script type="text/javascript" src="js/slider.js" ></script>
 <script type="text/javascript" src="js/add.js?v=1.4" ></script>
 <script type="text/javascript" src="js/nav.js" ></script>
