@@ -409,12 +409,12 @@ a {
 .our-work {
     background: url(../images/work-bg.png) no-repeat;
     background-size: cover;
-    height: 2102px;
+    height: 1960px;
     color: #fff;
     padding: 0 20px;
 }
 .work-padding {
-    padding: 420px 0;
+    padding: 350px 0;
 }
 .work__head {
     margin-bottom: 80px;
@@ -597,6 +597,9 @@ a {
     display: flex;
     flex-direction: column;
 }
+.slider-history {
+    margin-top: 50px !important;
+}
 .slider-history .slick-slide img {
     /*width: 287px !important;*/
     /*height: 282px;*/
@@ -613,7 +616,7 @@ a {
     max-width: 100%;
     padding: 0 20px;
     background-position-y: 39%;
-    height: 1636px;
+    height: 1532px;
 }
 
 .history-head {
