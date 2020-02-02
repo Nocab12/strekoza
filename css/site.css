@@ -147,7 +147,8 @@ a {
     width: 100%;
     top: 0;
     box-shadow: 0 5px 5px -5px #333;
-    z-index: 1;
+    z-index: 2;
+    transition-duration: 0.9ms;
 }
 .css-header-fixed .strekoza {
     color: #5568FF;
@@ -164,8 +165,21 @@ a {
 .nav-sub {
     display: none;
     position: absolute;
-
+    top: 72px;
 }
+.nav-sub:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 19px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+
 .nav-sub__flex {
     display: flex;
     align-items: flex-start;
@@ -189,7 +203,10 @@ a {
     background: #F6F6F6;
     border-right: 1px solid #EF5F2E;
 }
-
+.nav_top {
+    top: 84px;
+    box-shadow: 0px 5px 15px -5px #333;
+}
 /*--------- Стили для секции info ---------*/
 
 .info {
@@ -589,7 +606,7 @@ a {
     padding: 0 20px;
 }
 .slider-integration .slick-slide img{
-    width: 270px !important;
+    /*width: 270px !important;*/
     height: 190px;
     margin: 0 auto;
 }
@@ -697,6 +714,10 @@ a {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+.js-counter {
+    animation-duration: 0.2s;
+    animation-delay: 0s;
+}
 /*--------- Стили для footer ---------*/
 .footer-bg {
     background: #2E3CB0;
@@ -746,4 +767,7 @@ a {
 }
 .footer__member {
     margin-left: 15px;
+}
+.footer__link:hover {
+    text-shadow: 0 0 0.9px #fff, 0 0 0.9px #fff, 0 0 0.9px #fff;
 }

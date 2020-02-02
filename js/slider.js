@@ -6,9 +6,9 @@ $(document).ready(function () {
         infinite: true,
         pauseOnHover: true,
         mobileFirst: true,
-        autoplaySpeed: 5000,
-        slidesToScroll: 1,
-        autoplay: true,
+        // autoplaySpeed: 5000,
+        // slidesToScroll: 1,
+        // autoplay: true,
         responsive: [
             {
                 breakpoint: 1200,
