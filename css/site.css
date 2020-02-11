@@ -138,6 +138,13 @@ a {
 .header-content__paragraph {
     margin-bottom: 60px;
 }
+.header-content__item {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    list-style: disc;
+    margin-left: 15px;
+}
 .nav__menu-icon {
     display: none;
 }
@@ -155,6 +162,10 @@ a {
 }
 .css-header-fixed .nav__link {
     color: #000;
+}
+.css-header-fixed .nav__link:hover {
+    padding-bottom: 31px;
+    border-bottom: 2px solid #EF5F2E;
 }
 .css-header-fixed .logo__icon_violet path {
     fill: #5568FF;
@@ -178,7 +189,9 @@ a {
     border-left: 7px solid transparent;
     border-bottom-color: rgba(255, 255, 255, 1);
 }
-
+.css-header-fixed .nav-sub:before {
+    display: none;
+}
 
 .nav-sub__flex {
     display: flex;
@@ -203,6 +216,9 @@ a {
     background: #F6F6F6;
     border-right: 1px solid #EF5F2E;
 }
+.nav-sub__item:hover .nav-sub__link {
+    color: #5568FF;
+}
 .nav_top {
     top: 84px;
     box-shadow: 0px 5px 15px -5px #333;
@@ -210,7 +226,7 @@ a {
 /*--------- Стили для секции info ---------*/
 
 .info {
-    padding: 160px 20px;
+    padding: 160px 20px 0;
 }
 .info-wrap {
     display: flex;
@@ -236,6 +252,7 @@ a {
     padding-top: 20px;
 }
 .info-block__quan {
+    display: inline-block;
     font-size: 40px;
     color: #5568FF;
     font-weight: bold;
@@ -290,7 +307,11 @@ a {
 
 /*--------- Стили для секции type company ---------*/
 .type-company {
-    padding: 0 20px;
+    padding: 160px 20px 0;
+}
+.type-company__text {
+    font-size: 22px;
+    margin-top: 15px;
 }
 .line-border {
     margin: 45px 0;
@@ -377,7 +398,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 48px 42px;
+    padding: 48px 35px;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -392,15 +413,18 @@ a {
 }
 .price__quan {
     font-size: 22px;
-
 }
 .price__description {
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 26px;
     padding-top: 24px;
     color: #5568FF;
     font-weight: 500;
+}
+.price__description_number {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
 }
 .price__sub {
     font-size: 18px;
@@ -421,7 +445,29 @@ a {
 .company__text_block {
     display: block;
 }
-
+.price-commission {
+    background: #5568FF;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 23px 37px;
+}
+.price-commission__description {
+    padding-left: 38px;
+}
+.price-commission__head {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.price-commission__text{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #fff;
+}
 /*--------- Стили для секции наша работа ---------*/
 .our-work {
     background: url(../images/work-bg.png) no-repeat;
@@ -493,6 +539,10 @@ a {
 }
 .work-graph__flex {
     display: flex;
+    width: 52%;
+}
+.work-graph__flex .work-description__text {
+    max-width: 100%;
 }
 .work-graph__heading {
     margin-top: 0;
@@ -509,9 +559,7 @@ a {
     margin: 50px 0;
     padding: 0 20px;
 }
-.ab-test__head {
-    margin-bottom: 20px;
-}
+
 .ab_weight {
     font-weight: 500;
 }
@@ -524,7 +572,7 @@ a {
 .ab-test-wrap {
     width: 100%;
     max-width: 380px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .ab-test-wrap img {
     /*width: 100%;*/
@@ -541,7 +589,7 @@ a {
 }
 .ab-test__text {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     margin-top: 20px;
 }
 .ab-test__block-line {
@@ -571,7 +619,7 @@ a {
     justify-content: space-between;
 }
 .delivery__base {
-    width: 48%;
+    width: 52%;
 }
 .delivery__base img{
     width: 100%;
@@ -581,7 +629,7 @@ a {
 }
 .delivery__item {
     display: inline-block;
-    width: 30%;
+    width: 32%;
 }
 .delivery__item-img {
     width: 100%;
@@ -635,8 +683,14 @@ a {
     background-position-y: 39%;
     height: 1532px;
 }
-
-.history-head {
+.profit {
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.profit-description__head {
+    width: 42%;
+}
+.profit-description {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -667,13 +721,14 @@ a {
 }
 .day-wrap__text {
     font-size: 22px;
+    font-weight: 300;
     color: #fff;
 }
 .day-wrap__br {
     display: block;
 }
 .step-head {
-    margin-top: 160px;
+    margin-top: 240px;
     position: relative;
     padding-bottom: 270px;
 }
@@ -682,7 +737,7 @@ a {
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    top: 140px;
+    top: 60px;
 }
 .step-wrap {
     background: #fff;

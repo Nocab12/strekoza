@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Muller";
-    src: url("../fonts/muller/Muller-UltraLight.eot");
-    src: url("../fonts/muller/Muller-UltraLight.eot?#iefix")format("embedded-opentype"),
-        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
-        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
-    url("../fonts/muller/Muller-UltraLight.otf") format("opentype");
-    font-style: normal;
-    font-weight: 300;
-}
-@font-face {
-    font-family: "Muller";
     src: url("../fonts/muller/Muller-Light.eot");
     src: url("../fonts/muller/Muller-Light.eot?#iefix")format("embedded-opentype"),
         /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
         /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
     url("../fonts/muller/Muller-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Medium.otf");
+    src: url("../fonts/muller/Muller-Medium.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Medium.otf") format("opentype");
     font-style: normal;
     font-weight: 500;
 }
@@ -29,6 +29,16 @@
     font-weight: 700;
 }
 @font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Black.otf");
+    src: url("../fonts/muller/Muller-Black.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Black.otf") format("opentype");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
     font-family: "Roboto";
     src: url("../fonts/roboto/Roboto-Regular.ttf");
     src: url("../fonts/roboto/Roboto-Regular.ttf?#iefix")format("embedded-opentype"),
@@ -36,5 +46,15 @@
     url("../fonts/roboto/Roboto-Regular.ttf") format("woff"),
     url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/Roboto-Black.ttf");
+    src: url("../fonts/roboto/Roboto-Black.ttf?#iefix")format("embedded-opentype"),
+    url('../fonts/roboto/Roboto-Black.ttf') format('woff2'),
+    url("../fonts/roboto/Roboto-Black.ttf") format("woff"),
+    url("../fonts/roboto/Roboto-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }

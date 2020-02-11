@@ -331,9 +331,12 @@
     .day-wrap__text {
         font-size: 18px;
     }
-    .history-head {
+    .profit-description {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .profit-description__head {
+        width: 100%;
     }
     .btn-transparent {
         margin-top: 15px;
@@ -350,8 +353,14 @@
     .info-arrow-top, .info-arrow-bottom, .info-strekoza {
         display: none;
     }
-    h2 {
+    h2, .price-commission__head {
         font-size: 22px;
+    }
+    .price-commission__img {
+        display: none;
+    }
+    .price-commission__description {
+        padding-left: 0;
     }
     .footer-copyright {
         width: 100%;
@@ -368,6 +377,9 @@
         width: 287px !important;
         height: 282px;
         margin: 0 auto;
+    }
+    .price-commission__text {
+        font-size: 18px;
     }
 }
 
