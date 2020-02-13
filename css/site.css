@@ -594,7 +594,7 @@ a {
 /*--------- Стили для секции ab-test ---------*/
 
 .ab-test {
-    margin: 50px 0;
+    margin: 150px 0;
     padding: 0 20px;
 }
 
@@ -613,9 +613,10 @@ a {
     margin-top: 30px;
 }
 .ab-test-wrap img {
-    /*width: 100%;*/
-    /*max-width: 100%;*/
     height: 270px;
+}
+.ab-test_br {
+    display: block;
 }
 .ab-test__title {
     font-size: 22px;
@@ -722,7 +723,7 @@ a {
     height: 1532px;
 }
 .profit {
-    margin-top: 50px;
+    margin-top: 150px;
     padding: 0 20px;
 }
 .profit-description__head {
