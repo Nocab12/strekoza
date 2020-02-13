@@ -432,12 +432,14 @@ a {
     opacity: 0.5;
     padding: 15px 0;
 }
+.price__toggle {
+    padding: 25px 0 48px;
+}
 .price__details {
-    padding-top: 25px;
-    padding-bottom: 45px;
     font-size: 18px;
     text-decoration-line: underline;
     color: #5568FF;
+    cursor: pointer;
 }
 .price__btn-overall {
     margin: 0 auto;
@@ -467,6 +469,42 @@ a {
     line-height: 26px;
     font-weight: 500;
     color: #fff;
+}
+
+.price-all {
+    display: none;
+}
+.price-all__block {
+    margin-top: 30px;
+}
+.price__description_number.price-all_number {
+    font-size: 38px;
+}
+.price_comisson {
+    color: #EF5F2E;
+}
+.price-all__paragraph {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+.price-all__bg {
+    background: #5568FF;
+    margin: 30px -36px 0;
+    padding: 27px 35px;
+    color: #fff;
+}
+.price-all__total {
+    font-size: 18px;
+}
+.price-all__count {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.price-all__sum {
+    margin-top: 20px;
+    font-size: 18px;
 }
 /*--------- Стили для секции наша работа ---------*/
 .our-work {

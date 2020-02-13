@@ -34,8 +34,20 @@ $(document).ready(function () {
 
         }
     });
+
     $('.header-logo, .js-list-right').hover(function () {
         $('.nav-sub').hide();
+    });
+
+    // Открытие блока с прайс-листом
+    $('.js-price-toggle').on('click',function () {
+        if($('.price-all').is(':visible')) {
+            $(this).text('Подробнее');
+            $('.price-all').slideUp();
+        } else {
+            $(this).text('Скрыть');
+            $('.price-all').slideDown();
+        }
     });
 
 
