@@ -574,7 +574,7 @@
     .icon-close {
 
     }
-    .cssmodal.dialog .smallclose {
+    .smallclose {
         background: url('../images/icon-close-small.png') no-repeat;
         width: 16px;
         height: 16px;

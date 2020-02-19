@@ -100,7 +100,7 @@
                         </li>
                     </ul>
                     <ul class="nav__list js-list-right">
-                        <li class="nav__item nav__media nav__item_entrance"><a href="#auth" class="nav__link">Войти</a></li>
+                        <li class="nav__item nav__media nav__item_entrance"><a href="#" class="nav__link open-modal" data-modal="#modal1">Войти</a></li>
                         <li class="nav__item nav__media"><i class="nav__menu-icon add-toggle toggle"></i></li>
                         <li class="nav__item demo__item"><a href="#" class="demo__bg">Запросить Демо</a></li>
                     </ul>
@@ -884,6 +884,37 @@
         <h2>CSS222 Only Modal1 <a  href="#/" class="smallclose" aria-label="Close Modal Box">×</a></h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis enim, placerat id eleifend eu, semper vel sem.
     </figure>
+</div>
+
+
+
+<a href="#" class='open-modal' data-modal="#modal1" style="color: red">Open Modal</a>
+
+<div class='modal' id='modal1'>
+    <div class='content'>
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+
+            <div class="modal-head"><h2>Авторизация</h2></div>
+            <div class="modal-field">
+                <label for="email" class="modal-label">Email</label>
+                <input type="text" class="modal-input" value="Info@info.ru" id="email" placeholder="Info@info.ru">
+            </div>
+            <div class="modal-field">
+                <label for="password" class="modal-label">Пароль</label>
+                <input type="text" class="modal-input" value="&#9913;&#9913;&#9913;&#9913;&#9913;&#9913;&#9913;&#9913;&#9913;" id="password" placeholder="Info@info.ru">
+            </div>
+            <p class="auth-text">Авторизуясь в личном кабинете "Стрекозы", я даю согласие на обработку передаваемых мною данных в соответствии с
+                <a href="#" class="auth-link">Положением</a>  о конфиденциальности персональных данных
+            </p>
+            <input type="submit" class="modal-input auth-submit" value="Войти">
+            <div class="block-link">
+                <a href="#" class="block-link__size">Забыли пароль?</a>
+                <a href="#" class="block-link__size">Запросить Демо</a>
+            </div>
+        </div>
+        <a class='btn close-modal' data-modal="#modal1" href="#">K Bye</a>
+    </div>
 </div>
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
