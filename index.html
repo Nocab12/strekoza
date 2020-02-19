@@ -51,6 +51,7 @@
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Скоринг</a></li>
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">AB тестирование</a></li>
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">CRM</a></li>
+                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Документация</a></li>
                                     </ul>
                                     <ul class="nav-sub__width">
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Информирование</a></li>
@@ -64,14 +65,15 @@
                         </li>
                         <li class="nav__item">
                             <a href="#" class="js-nav-link nav__link">Цены</a>
-                            <ul class="nav-sub">
+                            <ul class="nav-sub price_before">
                                 <li class="nav-sub__flex">
                                     <ul class="nav-sub__width">
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Пример 1</a></li>
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Пример 2</a></li>
+                                    </ul>
+                                    <ul class="nav-sub__width">
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Пример 3</a></li>
                                         <li class="nav-sub__item"><a class="nav-sub__link" href="#">Пример 4</a></li>
-                                        <li class="nav-sub__item"><a class="nav-sub__link" href="#">Пример 5</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -83,7 +85,7 @@
                             <a href="#" class="js-nav-link nav__link">О компании</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="js-nav-link nav__link nav_active">Партнерство</a>
+                            <a href="#" class="js-nav-link nav__link">Партнерство</a>
                             <ul class="nav-sub">
                                 <li class="nav-sub__flex">
                                     <ul class="nav-sub__width">
@@ -232,7 +234,7 @@
                 </div>
                 <div class="work-description">
                     <p class="work-description__heading">Настройка</p>
-                    <p class="work-description__text">Подписываем договор.
+                    <p class="work-description__text">Подписываем договор. <br>
                         Делаем, как минимум, две цепочки информирования - копируем вашу текущую и включаем нашу, проверенную на сотнях тысяч посылок.
                     </p>
                 </div>
@@ -311,7 +313,7 @@
                 <div class="work-description work-graph__description">
                     <p class="work-description__heading work-graph__heading">Подведение итогов</p>
                     <p class="work-description__text">Когда посылки в группах А и B получили финальный статус (выкуп или возврат), видим результат нашей работы.</p>
-                    <a href="#" class="btn-overall work-graph__btn_indent">Узнать подробности</a>
+                    <a href="#" class="btn-overall work-graph__btn_indent">Хочу протестировать</a>
                 </div>
             </div>
         </div>
@@ -323,7 +325,7 @@
     <div class="container">
         <h2>Рассчитайте выгоду для вашей компании!</h2>
         <p class="type-company__text">Введите ваши данные ниже</p>
-        <div class="line-border"></div>
+        <img class="line-border" src="images/company-border.png" alt="">
         <span class="company-txt">Тип компании</span>
         <div class="btn-company-block">
             <a href="#" class="btn-company active">Интернет-магазин</a>
@@ -349,11 +351,11 @@
             </div>
             <div class="company-cost__block">
                 <label class="company-cost__label" for="c5">Средний чек <span class="company__text_block"> заказа</span></label>
-                <input type="text" id="c5" class="company-cost__input" value="10 000">
+                <input type="text" id="c5" class="company-cost__input" value="3 000">
             </div>
             <div class="company-cost__block">
                 <label class="company-cost__label" for="c6">Тратите на информирование <span class="company__text_block"> об 1 посылке</span></label>
-                <input type="text" id="c6" class="company-cost__input" value="10 000">
+                <input type="text" id="c6" class="company-cost__input" value="15">
             </div>
         </div>
         <div class="payment-block">
@@ -364,7 +366,7 @@
             <div class="price-wrap">
                 <p class="price__quan">В месяц</p>
                 <p class="price__description"><span class="price__description_number">710 000</span> руб. выручки</p>
-                <p class="price__sub">* с учетом нашей комиссии</p>
+                <p class="price__sub">* наша комиссия уже включена</p>
                 <p class="price__description"><span class="price__description_number">87%</span> выкуп по Почте России</p>
                 <p class="price__description"><span class="price__description_number">500</span> новых заказов</p>
                 <p class="price__description"><span class="price__description_number">1000</span> отзывов</p>
@@ -409,7 +411,7 @@
             <div class="price-wrap">
                 <p class="price__quan">В год</p>
                 <p class="price__description"><span class="price__description_number">8 520 000</span> руб. выручки</p>
-                <p class="price__sub">* с учетом нашей комиссии</p>
+                <p class="price__sub">* наша комиссия уже включена</p>
                 <p class="price__description"><span class="price__description_number">87%</span> выкуп по Почте России</p>
                 <p class="price__description"><span class="price__description_number">6000</span> новых заказов</p>
                 <p class="price__description"><span class="price__description_number">12 000</span> отзывов</p>
@@ -452,7 +454,7 @@
             <div class="price-wrap">
                 <p class="price__quan">С 1 посылки</p>
                 <p class="price__description"><span class="price__description_number">71</span> руб. выручки</p>
-                <p class="price__sub">* с учетом нашей комиссии</p>
+                <p class="price__sub">* наша комиссия уже включена</p>
                 <p class="price__description"><span class="price__description_number">87%</span> выкуп по Почте России</p>
                 <p class="price__description"><span class="price__description_number">0,05</span> нового заказа</p>
                 <p class="price__description"><span class="price__description_number">0,1</span> отзыв</p>
@@ -514,7 +516,7 @@
             <div class="slider-history__flex"><img src="images/slider-row/everad.png" alt=""></div>
             <div class="slider-history__flex"><img src="images/slider-row/sl-toys.png" alt=""></div>
             <div class="slider-history__flex"><img src="images/slider-row/sl-hr.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/sl-shop.png" alt=""></div>
+            <div class="slider-history__flex"><img src="images/slider-row/kma.png" alt=""></div>
             <div class="slider-history__flex"><img src="images/slider-row/avtovarka.png" alt=""></div>
             <div class="slider-history__flex"><img src="images/slider-row/becker.png" alt=""></div>
             <div class="slider-history__flex"><img src="images/slider-row/procent.png" alt=""></div>
@@ -535,73 +537,71 @@
                 <img src="images/ab-testi-img1.png" alt="">
                 <div class="ab-test__description">
                     <p class="ab-test__title">Каналы связи</p>
-                    <p class="ab-test__text">Заменив смс на одну из альтернатив, нам удалось добиться роста выкупа в 3%. Но будьте аккуратны! Один и тот же канал по-разному влияет на клиентов с разным скором.</p>
+                    <p class="ab-test__text">Заменив смс на одну из альтернатив, нам удалось добиться роста выкупа в 3%.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img2.png" alt="">
                 <div class="ab-test__description">
                     <p class="ab-test__title">Тексты</p>
-                    <p class="ab-test__text">Любимый кейс - однажды нам удалось поднять выкуп на 1%, добавив 1 слово в текст уведомления! Огромный простор для творчества. Мы перепробовали массу вариантов.
-                    </p>
+                    <p class="ab-test__text">Любимый кейс - однажды нам удалось поднять выкуп на 1%, добавив 1 слово в текст уведомления! Огромный простор для творчества. Мы перепробовали массу вариантов.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img3.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">Частотность</p>
-                    <p class="ab-test__text">Клиентов с низким скором рекомендуем уведомлять почаще. С высоким - пореже.</p>
+                    <p class="ab-test__title">Имя отправителя</p>
+                    <p class="ab-test__text">Настраивается для sms, соц. сетей и мессенджеров. Влияет на выкуп!</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img4.png" alt="">
                 <div class="ab-test__description">
                     <p class="ab-test__title">Триггеры</p>
-                    <p class="ab-test__text">У служб доставки много мусорных статусов, проконсультируйтесь с нами перед настройкой. Не забудь о сообщении после получения - можно собрать много отзывов и лидов.</p>
+                    <p class="ab-test__text">У служб доставки много ошибок в статусах и много мусорных статусов. Ошибочные мы фильтруем, а по мусорным не уведомляем.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img5.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">День и время</p>
-                    <p class="ab-test__text">Уведомления уходят по выбранному вами местному времени покупателя. Можно исключить нерабочие дни почты.
-                    </p>
+                    <p class="ab-test__title">Частотность</p>
+                    <p class="ab-test__text">Клиентов с низкой вероятностью выкупа уведомляем чаще, с высокой - реже. Вероятность высчитывает машинное обучение.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img6.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">Имя отправителя</p>
-                    <p class="ab-test__text">Настраивается для sms, соц. сетей и мессенджеров. Влияет на выкуп!</p>
+                    <p class="ab-test__title">День и время</p>
+                    <p class="ab-test__text">Отправляем уведомления по местному времени клиента. Учитываем выходные дни. От времени отправки уведомлений их эффективность тоже зависит.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img7.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">Триггеры</p>
-                    <p class="ab-test__text">У служб доставки много мусорных статусов, проконсультируйтесь с нами перед настройкой. Не забудь о сообщении после получения - можно собрать много отзывов и лидов.</p>
+                    <p class="ab-test__title">Номер телефона</p>
+                    <p class="ab-test__text">Звоним с местного регионального номера - немного повышает выкуп.</p>
                 </div>
             </div>
             <div class="ab-test-wrap">
-                <img src="images/ab-testi-img8.png" alt="">
+                <img src="images/ab-testi-img7.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">День и время</p>
-                    <p class="ab-test__text">Уведомления уходят по выбранному вами местному времени покупателя. Можно исключить нерабочие дни почты.
+                    <p class="ab-test__title">Голос робота</p>
+                    <p class="ab-test__text">Тестируем тембр и пол - нежный женский, брутальный мужской. Женщинам - мужской, мужчинам - женский и т.д..
                     </p>
                 </div>
             </div>
             <div class="ab-test-wrap">
                 <img src="images/ab-testi-img9.png" alt="">
                 <div class="ab-test__description">
-                    <p class="ab-test__title">Имя отправителя</p>
-                    <p class="ab-test__text">Настраивается для sms, соц. сетей и мессенджеров. Влияет на выкуп!</p>
+                    <p class="ab-test__title">Всё это в зависимости от скора</p>
+                    <p class="ab-test__text">Скор - вероятность выкупа посылки. По сути, с его помощью можно сегментировать аудиторию. Скор высчитывает наше машинное обучение"</p>
                 </div>
             </div>
         </div>
         <div class="ab-test__block-line">
-            <div class="ab-test__line"></div>
-            <a href="#" class="btn-overall">Хочу эксперементировать!</a>
-            <div class="ab-test__line"></div>
+            <img class="ab-test__line" src="images/test-border.png" alt="">
+            <a href="#" class="btn-overall">Хочу протестировать</a>
+            <img class="ab-test__line" src="images/test-border.png" alt="">
         </div>
 
     </div>
@@ -617,14 +617,18 @@
             </ul>
             <ul class="delivery__minor">
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-1.png" alt=""></li>
-                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-2.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-8.png" alt=""></li>
+
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-3.png" alt=""></li>
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-4.png" alt=""></li>
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-5.png" alt=""></li>
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-6.png" alt=""></li>
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-7.png" alt=""></li>
-                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-8.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-2.png" alt=""></li>
                 <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-9.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-10.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-11.png" alt=""></li>
+                <li class="delivery__item"><img class="delivery__item-img" src="images/minor-img-12.png" alt=""></li>
                 <li><a href="#" class="delivery__link">Скоринга пока нет</a></li>
             </ul>
         </div>
@@ -741,6 +745,7 @@
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Отзывы</a></li>
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Повторные продажи</a></li>
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Безопасность</a></li>
+                    <li class="nav__footer_indent"><a href="#" class="footer__link">Документация</a></li>
                 </ul>
                 <ul class="nav__footer_width">
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Цены и договор</a></li>
@@ -753,13 +758,12 @@
             <div class="footer-tel">
                 <ul>
                     <li class="nav__footer_indent footer__number">8 800 555 1743</li>
-                    <li>пн-пт, с 10 до 18</li>
-                    <li class="nav__footer_support">support@strekoza.ai</li>
+                    <li class="font_light">пн-пт, с 10 до 18</li>
+                    <li class="nav__footer_support font_light">support@strekoza.ai</li>
                 </ul>
             </div>
             <div class="footer-copyright">
-                <span class="footer__sup">почтатех</span>
-                <span class="footer__member">Участник корпоративного акселератора Почты России</span>
+                <span class="footer__sup">почтатех <span class="footer__member">Участник корпоративного акселератора Почты России</span></span>
                 <span class="footer__date">Стрекоза 2020г.</span>
             </div>
         </div>

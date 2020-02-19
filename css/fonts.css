@@ -1,5 +1,15 @@
 @font-face {
     font-family: "Muller";
+    src: url("../fonts/muller/Muller-Thin.otf");
+    src: url("../fonts/muller/Muller-Thin.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Thin.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Muller";
     src: url("../fonts/muller/Muller-Light.eot");
     src: url("../fonts/muller/Muller-Light.eot?#iefix")format("embedded-opentype"),
         /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
@@ -30,11 +40,11 @@
 }
 @font-face {
     font-family: "Muller";
-    src: url("../fonts/muller/Muller-Black.otf");
-    src: url("../fonts/muller/Muller-Black.otf?#iefix")format("embedded-opentype"),
+    src: url("../fonts/muller/Muller-ExtraBold.otf");
+    src: url("../fonts/muller/Muller-ExtraBold.otf?#iefix")format("embedded-opentype"),
         /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
         /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
-    url("../fonts/muller/Muller-Black.otf") format("opentype");
+    url("../fonts/muller/Muller-ExtraBold.otf") format("opentype");
     font-style: normal;
     font-weight: 800;
 }

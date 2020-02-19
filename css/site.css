@@ -15,7 +15,7 @@ h1 {
 }
 h2 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 500;
 }
 h2.white_color {
     color: #fff;
@@ -40,6 +40,7 @@ a {
 }
 .strekoza {
     text-transform: uppercase;
+    font-weight: 300;
 }
 .nav_active {
     font-weight: 500;
@@ -47,6 +48,7 @@ a {
 .btn-overall {
     display: block;
     width: 100%;
+    min-width: 276px;
     max-width: 276px;
     text-align: center;
     padding: 18px 20px;
@@ -55,16 +57,16 @@ a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
 }
 .btn-overall-small {
     width: 100%;
-    max-width: 206px;
+    max-width: 240px;
 }
 /*--------- Стили для header ---------*/
 .header-section {
     background: url("../images/header-bg.png") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     max-width: 100%;
     color: #fff;
     height: 900px;
@@ -132,6 +134,9 @@ a {
     width: 485px;
     max-width: 100%;
 }
+.header-content__text h1 {
+    font-weight: 300;
+}
 .header-content__delivery {
     margin-bottom: 40px;
 }
@@ -177,17 +182,24 @@ a {
     display: none;
     position: absolute;
     top: 72px;
+    width: 100%;
+    max-width: 505px;
 }
 .nav-sub:before {
     content: '';
     position: absolute;
-    top: -7px;
-    left: 19px;
+    top: -8px;
+    left: 7%;
     display: inline-block;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #fff;
-    border-left: 7px solid transparent;
     border-bottom-color: rgba(255, 255, 255, 1);
+    border-radius: 30%;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.nav-sub.price_before:before {
+    left: 3%;
 }
 .css-header-fixed .nav-sub:before {
     display: none;
@@ -205,7 +217,7 @@ a {
 }
 .nav-sub__item {
     width: 190px;
-    padding: 10px 0 10px 10px;
+    padding: 10px 0 15px 10px;
 }
 .nav-sub__link {
     color: #000;
@@ -315,17 +327,18 @@ a {
 }
 .line-border {
     margin: 45px 0;
+    width: 100%;
     max-width: 100%;
-    border-bottom: 1px solid #ccc;
 }
 .company-txt {
     display: block;
     font-size: 18px;
+    font-weight: 300;
 }
 .btn-company-block {
     margin-top: 20px;
     display: flex;
-    padding: 23px 0;
+    padding: 0 0 23px;
 }
 .btn-company {
     color: #5568FF;
@@ -363,6 +376,7 @@ a {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 15px;
+    font-weight: 300;
 }
 .company-cost__input {
     width: 375px;
@@ -509,8 +523,7 @@ a {
 /*--------- Стили для секции наша работа ---------*/
 .our-work {
     background: url(../images/work-bg.png) no-repeat;
-    background-size: cover;
-    height: 1960px;
+    background-size: 100% 100%;
     color: #fff;
     padding: 0 20px;
 }
@@ -518,7 +531,7 @@ a {
     padding: 350px 0;
 }
 .work__head {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .work-block {
     display: flex;
@@ -571,6 +584,7 @@ a {
     margin-top: 15px;
     width: 100%;
     max-width: 332px;
+    font-weight: 100;
 }
 .work-graph__center {
     justify-content: center;
@@ -620,7 +634,7 @@ a {
 }
 .ab-test__title {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 38px;
 }
 .ab-test__description {
@@ -637,9 +651,13 @@ a {
     justify-content: space-between;
     margin-top: 50px;
 }
+.ab-test__block-line .btn-overall {
+    margin: 0 25px;
+
+}
 .ab-test__line {
     width: 100%;
-    max-width: 370px;
+    max-width: 420px;
     height: 1px;
     background: #ccc;
 }
@@ -855,12 +873,16 @@ a {
     align-items: center;
     width: 100%;
 }
-.footer__number, .footer__sup {
-    font-size: 25px;
+.footer__sup {
+    font-size: 28px;
     font-weight: bold;
 }
 .footer__member {
-    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.footer__date, .footer__link, .font_light {
+    font-weight: 100;
 }
 .footer__link:hover {
     text-shadow: 0 0 0.9px #fff, 0 0 0.9px #fff, 0 0 0.9px #fff;

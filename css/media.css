@@ -124,7 +124,19 @@
     .slider-integration .slick-next, .slider-history .slick-next {
         right: -15px;
     }
+    .ab-test__block-line {
+        justify-content: center;
+    }
+    .ab-test__line {
+        max-width: 350px;
+    }
 
+}
+
+@media (max-width: 1024px) {
+    .price-block {
+        flex-wrap: wrap;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -208,6 +220,9 @@
     }
     .step-head {
         margin-top: 30px;
+    }
+    .ab-test__line {
+        max-width: 200px;
     }
 
 }
