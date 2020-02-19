@@ -565,8 +565,20 @@
     .footer-bg {
         padding-top: 400px;
     }
+    .cssmodal figure {
+        padding: 0;
+    }
+    .modal-content {
+        padding: 22px;
+    }
+    .icon-close {
 
-
+    }
+    .cssmodal.dialog .smallclose {
+        background: url('../images/icon-close-small.png') no-repeat;
+        width: 16px;
+        height: 16px;
+    }
 
 }
 
