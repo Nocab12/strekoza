@@ -1069,13 +1069,11 @@ a {
     pointer-events: inherit;
 }
 .overlay .modal.open .content {
-    transform: translate(0, 0px);
+
     opacity: 1;
 }
 .overlay .modal .content {
-    transform: translate(0, -10px);
-    opacity: 0;
-    transition: 0.35s ease-in-out;
+
 }
 .overlay .modal .title {
     margin-top: 0;
