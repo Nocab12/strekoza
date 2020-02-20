@@ -56,7 +56,8 @@ $(document).ready(function () {
     });
 
     $(".open-modal").on('click', function(e){
-
+        e.preventDefault();
+        e.stopImmediatePropagation;
 
         var $this = $(this),
             modal = $($this).data("modal");
