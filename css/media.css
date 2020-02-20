@@ -568,6 +568,30 @@
     .cssmodal figure {
         padding: 0;
     }
+    .modal-main {
+        max-width: 279px;
+    }
+    .modal-label {
+        margin-bottom: 12px;
+    }
+    .modal-input {
+        max-width: 235px;
+        font-size: 14px;
+        padding: 16px 67px 16px 20px;
+    }
+    .modal-field {
+        margin-bottom: 20px;
+    }
+    .auth-text {
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+    .block-link__size {
+        font-size: 12px;
+    }
+    .auth-submit {
+        padding: 16px;
+    }
     .modal-content {
         padding: 22px;
     }
