@@ -1002,6 +1002,7 @@ input.modal-input[type='password']::placeholder {
 }
 .open-modal {
     cursor: pointer;
+    font-weight: 300;
 }
 /* Unopened CSS Modal */
 .cssmodal {
