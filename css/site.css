@@ -1004,55 +1004,6 @@ input.modal-input[type='password']::placeholder {
     cursor: pointer;
     font-weight: 300;
 }
-/* Unopened CSS Modal */
-.cssmodal {
-    display: flex;
-    position: fixed;
-    left: 0;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    -webkit-transition: top 0s .5s, opacity .5s 0s;
-    transition: top 0s .5s, opacity .5s 0s;
-}
-
-
-/* Opened CSS Modal */
-.cssmodal:target {
-    top: 0;
-    opacity: 1;
-    -webkit-transition: none;
-    transition: none;
-    z-index: 100;
-}
-
-/* CSS Modal content */
-.cssmodal figure {
-    width: 95%;
-    max-width: 600px;
-    position: relative;
-    padding: 1.5em;
-    opacity: 0;
-    background-color: white;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s;
-}
-
-/* Dialog modal style */
-.cssmodal.dialog figure {
-    background: white;
-    border-radius: 5px;
-    padding-top: 10px;
-}
-
-
-/* CSS Modal content when opened */
-.cssmodal:target figure {
-    opacity: 1;
-}
 
 /* style for small x link inside dialog modal */
 .smallclose {
@@ -1096,7 +1047,6 @@ input.modal-input[type='password']::placeholder {
 }
 .overlay {
     width: 100%;
-
     min-height: 100vh;
     display: flex;
     justify-content: center;
