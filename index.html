@@ -100,10 +100,10 @@
                         </li>
                     </ul>
                     <ul class="nav__list js-list-right">
-                        <li class="nav__item nav__media nav__item_entrance"><span class="nav__link open-modal" data-modal="#modal1" style="color: orange">Войти</span></li>
+                        <li class="nav__item nav__media nav__item_entrance"><span class="nav__link open-modal" data-modal="#authorization">Войти</span></li>
                         <li class="nav__item nav__media"><i class="nav__menu-icon add-toggle toggle"></i></li>
                         <li class="nav__item demo__item">
-                            <span class="nav__link open-modal" data-modal="#modal1" style="color: red">Open Modal</span>
+                            <span class="demo__bg open-modal" data-modal="#report_mail">Запросить Демо</span>
 <!--                            <a href="#" class="demo__bg">Запросить Демо</a>-->
                         </li>
                     </ul>
@@ -709,7 +709,7 @@
                             <p class="step-wrap__text">Спрогнозируем рост выручки и сокращение затрат, расскажем о кейсах и о сервисе.</p>
                         </div>
                         <div class="step-wrap__bottom">
-                            <a href="#" class="btn-overall">Выбрать время</a>
+                            <a href="#" class="open-modal btn-overall" data-modal="#choice_time">Выбрать время</a>
                         </div>
                     </div>
                     <div class="step-wrap">
@@ -837,7 +837,7 @@
                 </ul>
             </li>
             <li class="entry">
-                <a href="#">Войти</a>
+                <a href="#" class="open-modal" data-modal="#authorization">Войти</a>
             </li>
         </ul>
 
@@ -855,36 +855,158 @@
 
 
 
-<a href="#" class='open-modal' data-modal="#modal1" style="color: red">Open Modal</a>
 
-<div class="modal modal-main" id="modal1">
+<!--Модальное окно авторизации-->
+<div class="modal modal-main" id="authorization">
     <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+            <div class="modal-head"><h2>Авторизация</h2></div>
+            <div class="modal-field">
+                <label for="email" class="modal-label">Email</label>
+                <input type="text" class="modal-input" id="email" placeholder="Info@info.ru">
+            </div>
+            <div class="modal-field">
+                <label for="password" class="modal-label">Пароль</label>
+                <div class="eye">
+                    <input type="password" class="modal-input modal-input_eye" placeholder="* * * * * * * * * * * * " id="password">
+                </div>
+            </div>
+            <p class="auth-text">Авторизуясь в личном кабинете "Стрекозы", я даю согласие на обработку передаваемых мною данных в соответствии с
+                <a href="#" class="auth-link">Положением</a>  о конфиденциальности персональных данных
+            </p>
+            <input type="submit" class="modal-input auth-submit" value="Войти">
+            <div class="block-link">
+                <a href="#" class="open-modal block-link__size" data-modal="#recovery_pass">Забыли пароль?</a>
+                <a href="#" class="block-link__size">Запросить Демо</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-            <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
-            <div class="modal-content">
-                <div class="modal-head"><h2>Авторизация</h2></div>
+<!--Модальное окно Восстановление пароля-->
+<div class="modal modal-main" id="recovery_pass">
+    <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+            <div class="modal-head"><h2>Восстановление <br> пароля</h2></div>
+            <div class="modal-field">
+                <label for="email" class="modal-label">Email</label>
+                <input type="text" class="modal-input" id="email" placeholder="Info@info.ru">
+            </div>
+            <p class="auth-text">
+                Внимание! На указанный при регистрации номер телефона будет выслано SMS с кодом подтверждения
+            </p>
+
+            <input type="submit" class="modal-input auth-submit" value="Отправить">
+            <div class="block-link block-link_center">
+                <a href="#" class="open-modal block-link__size" data-modal="#confirm_pass">Уже есть код </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Модальное окно Подтверждение и восстановление пароля-->
+<div class="modal modal-main" id="confirm_pass">
+    <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+            <div class="modal-head"><h2>Подтверждение <br> восстановления пароля</h2></div>
+            <div class="modal-field">
+                <label for="email" class="modal-label">Email</label>
+                <input type="text" class="modal-input" id="email" placeholder="Info@info.ru">
+            </div>
+            <div class="modal-field">
+                <label for="code_confirm" class="modal-label">Код подтверждения</label>
+                <input type="text" class="modal-input" id="code_confirm" placeholder="24352">
+            </div>
+            <input type="submit" class="modal-input auth-submit" value="Подтвердить">
+            <div class="block-link">
+                <a href="#" class="open-modal block-link__size" data-modal="#authorization">Вход</a>
+                <a href="#" class="block-link__size">Запросить Демо</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно Отправим отчет на ваш e-mail! -->
+<div class="modal modal-main" id="report_mail">
+    <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+            <div class="modal-head"><h2>Отправим отчет <br> на ваш e-mail!</h2></div>
+            <div class="modal-field">
+                <label for="email" class="modal-label">Введите e-mail</label>
+                <input type="text" class="modal-input" id="email" placeholder="kostya55655@gmail.com">
+            </div>
+            <div class="modal-field">
+                <label for="name" class="modal-label">Как вас зовут?</label>
+                <input type="text" class="modal-input" id="name" placeholder="Константин Константинович">
+            </div>
+            <div class="modal-check">
+                <div class="s-checkbox">
+                    <input type="checkbox" id="checkbox_1">
+                    <label for="checkbox_1" class="s-checkbox__label">Согласен получать полезную <br>
+                        <a href="#" class="s-checkbox__link">рассылку Стрекозы</a></label>
+                </div>
+            </div>
+            <input type="submit" class="modal-input auth-submit" value="Получить расчет">
+
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно Выберете время, и мы вам позвоним -->
+<div class="modal b-modal-main" id="choice_time">
+    <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content">
+            <div class="modal-head"><h2>Выберете время, и мы вам позвоним</h2></div>
+            <div class="b-modal-row">
                 <div class="modal-field">
-                    <label for="email" class="modal-label">Email</label>
-                    <input type="text" class="modal-input" id="email" placeholder="Info@info.ru">
+                    <label for="ct_date" class="modal-label">Дата</label>
+                    <input type="date" class="modal-input" id="ct_date" placeholder="20.01.20">
                 </div>
                 <div class="modal-field">
-                    <label for="password" class="modal-label">Пароль</label>
-                    <div class="eye">
-                        <input type="password" class="modal-input" placeholder="* * * * * * * * * * * * " id="password">
-                    </div>
+                    <label for="ct_time" class="modal-label">Время</label>
+                    <input type="time" class="modal-input" id="ct_time" placeholder="16:00">
                 </div>
-                <p class="auth-text">Авторизуясь в личном кабинете "Стрекозы", я даю согласие на обработку передаваемых мною данных в соответствии с
-                    <a href="#" class="auth-link">Положением</a>  о конфиденциальности персональных данных
-                </p>
-                <input type="submit" class="modal-input auth-submit" value="Войти">
-                <div class="block-link">
-                    <a href="#" class="block-link__size">Забыли пароль?</a>
-                    <a href="#" class="block-link__size">Запросить Демо</a>
+            </div>
+            <img class="b-modal-line" src="images/modal-line.png" alt="">
+            <div class="b-modal-row">
+                <div class="modal-field">
+                    <label for="ct_name" class="modal-label">Ваше имя</label>
+                    <input type="text" class="modal-input" id="ct_name" placeholder="Константин Константинович">
+                </div>
+                <div class="modal-field">
+                    <label for="ct_parcels" class="modal-label">Посылок в месяц</label>
+                    <input type="text" class="modal-input" id="ct_parcels" placeholder="200 000 штук">
+                </div>
+            </div>
+            <div class="b-modal-row">
+                <div class="modal-field">
+                    <label for="ct_tel" class="modal-label">Телефон</label>
+                    <input type="text" class="modal-input" id="ct_tel" placeholder="+7 999 000 00 00">
+                </div>
+                <div class="modal-field">
+                    <label for="ct_email" class="modal-label">E-mail</label>
+                    <input type="text" class="modal-input" id="ct_email" placeholder="Info@info.ru">
+                </div>
+            </div>
+            <div class="modal-check">
+                <div class="s-checkbox">
+                    <input type="checkbox" id="ct_checkbox">
+                    <label for="ct_checkbox" class="s-checkbox__label">Согласен с
+                        <a href="#" class="s-checkbox__link">офертой</a></label>
                 </div>
             </div>
 
+            <input type="submit" class="modal-input auth-submit" value="Отправить">
+
+        </div>
     </div>
 </div>
+
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="plugins/slick/slick.js" charset="utf-8" ></script>
 <script type="text/javascript" src="js/hc-offcanvas-nav.js" charset="utf-8" ></script>

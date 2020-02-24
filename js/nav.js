@@ -94,5 +94,7 @@ $(window).resize(function(){
         }
     });
 
+    $('.nav-close a span').addClass('nav-smallclose');
+
 })(jQuery);
 

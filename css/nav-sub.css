@@ -171,9 +171,15 @@ body.hc-nav-open {
 }
 
 .hc-offcanvas-nav.nav-levels-overlap ul li.nav-parent {
-    position: static
-}
+    position: static;
 
+}
+.hc-offcanvas-nav.nav-levels-overlap ul li.nav-parent:hover {
+    border-left: 2px solid #EF5F2E;
+}
+.nav-content ul li:hover {
+    border-left: 2px solid #EF5F2E;
+}
 .hc-offcanvas-nav.nav-levels-overlap ul li.level-open > .nav-wrapper {
     visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
@@ -337,16 +343,18 @@ body.hc-nav-open {
 
 .hc-offcanvas-nav a, .hc-offcanvas-nav .nav-item {
     padding: 14px 17px;
-    font-size: 15px;
+    font-size: 16px;
     color: #000;
     z-index: 1;
     background: rgba(0, 0, 0, 0);
-    border-bottom: 1px solid #2c5d8f
+}
+.hc-offcanvas-nav a, .hc-offcanvas-nav .demo-item.nav-item {
+    color: #fff;
 }
 
-.hc-offcanvas-nav:not(.touch-device) a:hover {
-    background: #2c5d8f
-}
+/*.hc-offcanvas-nav:not(.touch-device) a:hover {*/
+/*    background: #2c5d8f*/
+/*}*/
 .hc-offcanvas-nav:not(.touch-device) a.demo-item:hover {
     background: #EF5F2E;
 }
@@ -361,13 +369,14 @@ body.hc-nav-open {
 
 .hc-offcanvas-nav li.nav-close a, .hc-offcanvas-nav li.nav-back a {
     background: #fff;
-    border-top: 1px solid #295887;
-    border-bottom: 1px solid #295887
+    color: #000;
 }
-
-.hc-offcanvas-nav li.nav-close a:hover, .hc-offcanvas-nav li.nav-back a:hover {
-    background: #2c5d8f;
+.hc-offcanvas-nav li.nav-close a, .hc-offcanvas-nav li.nav-back a:hover {
+    font-weight: bold;
 }
+/*.hc-offcanvas-nav li.nav-close a:hover, .hc-offcanvas-nav li.nav-back a:hover {*/
+/*    background: #2c5d8f;*/
+/*}*/
 
 .hc-offcanvas-nav li.nav-close:not(:first-child) a, .hc-offcanvas-nav li.nav-back:not(:first-child) a {
     margin-top: -1px
@@ -376,7 +385,9 @@ body.hc-nav-open {
 .hc-offcanvas-nav li.nav-parent .nav-item {
     padding-right: 58px
 }
-
+.hc-offcanvas-nav li.nav-parent .nav-item:hover {
+    font-weight: bold;
+}
 .hc-offcanvas-nav li.nav-close span, .hc-offcanvas-nav li.nav-parent span.nav-next, .hc-offcanvas-nav li.nav-back span {
     width: 45px;
     position: absolute;
@@ -388,17 +399,17 @@ body.hc-nav-open {
     transition: background .2s ease
 }
 
-.hc-offcanvas-nav li.nav-close span::before, .hc-offcanvas-nav li.nav-close span::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    margin-top: -3px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000
-}
+/*.hc-offcanvas-nav li.nav-close span::before, .hc-offcanvas-nav li.nav-close span::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 6px;*/
+/*    height: 6px;*/
+/*    margin-top: -3px;*/
+/*    border-top: 2px solid #000;*/
+/*    border-left: 2px solid #000*/
+/*}*/
 
 .hc-offcanvas-nav li.nav-close span::before {
     margin-left: -9px;
@@ -415,20 +426,20 @@ body.hc-nav-open {
     border-left: 1px solid #2c5d8f
 }
 
-.hc-offcanvas-nav span.nav-next::before, .hc-offcanvas-nav li.nav-back span::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 8px;
-    height: 8px;
-    margin-left: -2px;
-    box-sizing: border-box;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
-    -webkit-transform-origin: center;
-    transform-origin: center
-}
+/*.hc-offcanvas-nav span.nav-next::before, .hc-offcanvas-nav li.nav-back span::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 8px;*/
+/*    height: 8px;*/
+/*    margin-left: -2px;*/
+/*    box-sizing: border-box;*/
+/*    border-top: 2px solid #000;*/
+/*    border-left: 2px solid #000;*/
+/*    -webkit-transform-origin: center;*/
+/*    transform-origin: center*/
+/*}*/
 
 .hc-offcanvas-nav span.nav-next::before {
     -webkit-transform: translate(-50%, -50%) rotate(135deg);
@@ -826,7 +837,10 @@ main .button.active {
 }
 
 .hc-offcanvas-nav h2 {
-    font-weight: 400
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    opacity: 0.5;
 }
 
 .hc-offcanvas-nav a {

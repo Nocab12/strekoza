@@ -58,6 +58,8 @@ $(document).ready(function () {
     $(".open-modal").on('click', function(e){
         e.preventDefault();
         e.stopImmediatePropagation;
+        $('.overlay').removeClass('open');
+        $('.modal').removeClass('open');
 
         var $this = $(this),
             modal = $($this).data("modal");
@@ -87,19 +89,12 @@ $(document).ready(function () {
         e.preventDefault();
         e.stopImmediatePropagation;
 
-        var $this = $(this),
-            modal = $($this).data("modal");
-
-        $(modal).removeClass("open");
-
-        $(modal).parents(".overlay").removeClass("open");
+        $('.overlay').removeClass('open');
+        $('.modal').removeClass('open');
 
 
     });
 
-    $(".dm-modal").on('click', function (e) {
-        if (e.target == this) $(".dm-overlay").fadeOut('fast');
-    })
 
 
 });

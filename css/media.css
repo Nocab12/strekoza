@@ -224,7 +224,17 @@
     .ab-test__line {
         max-width: 200px;
     }
-
+    .b-modal-row {
+        flex-direction: column;
+    }
+    .b-modal-main {
+        max-width: 545px;
+    }
+    .b-modal-line {
+        width: 100%;
+        max-width: 375px;
+        height: 1px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -577,7 +587,7 @@
     .modal-input {
         max-width: 235px;
         font-size: 14px;
-        padding: 16px 67px 16px 20px;
+        padding: 16px 20px 16px 20px;
     }
     .modal-field {
         margin-bottom: 20px;
@@ -602,6 +612,13 @@
         background: url('../images/icon-close-small.png') no-repeat;
         width: 16px;
         height: 16px;
+    }
+    .eye:before {
+        top: 18%;
+    }
+    .b-modal-line {
+        max-width: 235px;
+        margin-top: 20px;
     }
 
 }
