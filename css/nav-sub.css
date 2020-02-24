@@ -333,13 +333,7 @@ body.hc-nav-open {
     background: #fff;
 }
 
-.hc-offcanvas-nav h2 {
-    font-size: 19px;
-    font-weight: normal;
-    text-align: left;
-    padding: 20px 17px;
-    color: #1b3958
-}
+
 
 .hc-offcanvas-nav a, .hc-offcanvas-nav .nav-item {
     padding: 14px 17px;
@@ -833,14 +827,21 @@ main .button.active {
 }
 
 .hc-offcanvas-nav .nav-wrapper-0 > .nav-content {
-    padding-bottom: 41px
-}
+    padding-bottom: 41px;
 
+}
+.hc-offcanvas-nav .first-nav {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
 .hc-offcanvas-nav h2 {
     font-weight: 500;
     font-size: 16px;
     color: #000;
     opacity: 0.5;
+    text-align: left;
+    padding: 34px 17px 10px;
 }
 
 .hc-offcanvas-nav a {

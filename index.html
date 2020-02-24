@@ -514,20 +514,21 @@
         <div class="profit-description">
             <h2 class="profit-description__head">Принесли сотни миллионов рублей 250+ интернет-магазинам</h2>
             <a href="#" class="btn-overall btn-transparent">Рассказать еще кейсы?</a>
+            <div class="js-slider-history slider-history slider">
+                <div class="slider-history__flex"><img src="images/slider-row/everad.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/sl-toys.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/sl-hr.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/kma.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/avtovarka.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/becker.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/procent.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/gosso.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/autolada.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/izdatelstvo.png" alt=""></div>
+                <div class="slider-history__flex"><img src="images/slider-row/sl-company.png" alt=""></div>
+            </div>
         </div>
-        <div class="js-slider-history slider-history slider">
-            <div class="slider-history__flex"><img src="images/slider-row/everad.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/sl-toys.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/sl-hr.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/kma.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/avtovarka.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/becker.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/procent.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/gosso.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/autolada.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/izdatelstvo.png" alt=""></div>
-            <div class="slider-history__flex"><img src="images/slider-row/sl-company.png" alt=""></div>
-        </div>
+
     </div>
 </section>
 
@@ -586,7 +587,7 @@
                 </div>
             </div>
             <div class="ab-test-wrap">
-                <img src="images/ab-testi-img7.png" alt="">
+                <img src="images/ab-testi-img8.png" alt="">
                 <div class="ab-test__description">
                     <p class="ab-test__title">Голос робота</p>
                     <p class="ab-test__text">Тестируем тембр и пол - нежный женский, брутальный мужской. Женщинам - мужской, мужчинам - женский и т.д..
@@ -701,8 +702,8 @@
                 <div class="step-block">
                     <div class="step-wrap">
                         <div class="step-wrap__top">
-                            <img class="step-wrap__img_left" src="images/clock.png" alt="">
-                            <img src="images/step-one.png" alt="">
+                            <img class="step-wrap__img_clock" src="images/clock.png" alt="">
+                            <img class="step-wrap__img_number" src="images/step-one.png" alt="">
                         </div>
                         <div class="step-wrap__middle">
                             <p class="step-wrap__head">Найдите 30 минут на знакомство</p>
@@ -714,8 +715,8 @@
                     </div>
                     <div class="step-wrap">
                         <div class="step-wrap__top">
-                            <img class="step-wrap__img_left" src="images/ui.png" alt="">
-                            <img src="images/step-two.png" alt="">
+                            <img class="step-wrap__img_ui" src="images/ui.png" alt="">
+                            <img class="step-wrap__img_number" src="images/step-two.png" alt="">
                         </div>
                         <div class="step-wrap__middle">
                             <p class="step-wrap__head">Загрузите данные для теста</p>
@@ -755,6 +756,11 @@
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Партнерство</a></li>
                     <li class="nav__footer_indent"><a href="#" class="footer__link">О компании</a></li>
                     <li class="nav__footer_indent"><a href="#" class="footer__link">Блог</a></li>
+                </ul>
+                <ul class="footer-tel__menu">
+                    <li class="nav__footer_indent footer__number">8 800 555 1743</li>
+                    <li class="font_light">пн-пт, с 10 до 18</li>
+                    <li class="nav__footer_support font_light">support@strekoza.ai</li>
                 </ul>
             </div>
             <div class="footer-line"></div>
@@ -1001,11 +1007,25 @@
                 </div>
             </div>
 
-            <input type="submit" class="modal-input auth-submit" value="Отправить">
+            <input type="submit" class="modal-input auth-submit open-modal" data-modal="#complete" value="Отправить">
 
         </div>
     </div>
 </div>
+
+<!--Модальное окно Подтверждение-->
+<div class="modal b-modal-main" id="complete">
+    <div class="content">
+        <div class="icon-close"><a href="#/" class="smallclose close-modal"  data-modal="#modal1"></a></div>
+        <div class="modal-content complete_center">
+            <img class="complete__img" src="images/success.png" alt="">
+            <p class="complete__head">Спасибо!</p>
+            <p class="complete__text">Свяжемся с вами в указанное время</p>
+
+        </div>
+    </div>
+</div>
+
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="plugins/slick/slick.js" charset="utf-8" ></script>

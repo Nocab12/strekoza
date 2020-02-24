@@ -751,6 +751,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .btn-transparent {
     background: #fff;
@@ -810,9 +811,6 @@ a {
     padding-top: 15px;
     height: 150px;
 }
-.step-wrap__img_left {
-    padding-top: 20px;
-}
 .step-wrap__head {
     margin-top: 30px;
     font-size: 22px;
@@ -854,6 +852,9 @@ a {
 .footer-tel {
     width: 30%;
     text-align: right;
+}
+.footer-tel__menu {
+    display: none;
 }
 .footer-copyright {
     margin-top: 70px;
@@ -1142,7 +1143,22 @@ input.modal-input[type='password']::placeholder {
 .overlay .modal .title {
     margin-top: 0;
 }
-
+.complete_center {
+    text-align: center;
+}
+.complete__img {
+    margin-top: 50px;
+}
+.complete__head {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.complete__text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+}
 
 
 /***** универсальный чекбокс *****/
