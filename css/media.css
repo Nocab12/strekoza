@@ -641,16 +641,17 @@
     }
     .auth-text {
         font-size: 12px;
-        margin-bottom: 28px;
+        margin-bottom: 10px;
     }
     .block-link__size {
         font-size: 12px;
     }
     .auth-submit {
         padding: 16px;
+        margin-bottom: 10px;
     }
     .modal-content {
-        padding: 22px;
+        padding: 10px 20px;
     }
     .icon-close {
 
