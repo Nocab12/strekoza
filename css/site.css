@@ -932,8 +932,9 @@ a {
     box-sizing: border-box;
 }
 .modal-head {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
+
 .modal-label {
     font-size: 18px;
     display: block;

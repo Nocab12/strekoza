@@ -4,13 +4,6 @@
 
 }
 @media (max-width: 1900px) {
-    .history-bg {
-        padding: 0 20px;
-    }
-    /*.history-bg2 {*/
-    /*    background: #5568FF;*/
-    /*    padding: 0 20px;*/
-    /*}*/
     .history-title {
         padding-top: 350px;
     }
@@ -513,7 +506,7 @@
         margin-top: 0;
     }
     .work-padding {
-        padding: 290px 0 220px;
+        padding: 150px 0 100px;
     }
     .btn-company {
         font-size: 14px;
@@ -556,9 +549,7 @@
         padding: 0;
         margin-bottom: 30px;
     }
-    .work__arrow_bottom {
-        display: none;
-    }
+
     .work-description__heading-icon {
         width: 100%;
     }
