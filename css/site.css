@@ -139,13 +139,14 @@ a {
 }
 .header-content__delivery {
     margin-bottom: 40px;
+    font-weight: 100;
 }
 .header-content__paragraph {
     margin-bottom: 60px;
 }
 .header-content__item {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 30px;
     list-style: disc;
     margin-left: 15px;
@@ -268,18 +269,22 @@ a {
     font-size: 40px;
     color: #5568FF;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+.info-block__currency {
+    font-size: 22px;
 }
 .info-block__heading {
     font-size: 20px;
+    line-height: 26px;
     color: #5568FF;
     font-weight: bold;
     margin-bottom: 20px;
-    max-width: 220px;
+    /*max-width: 220px;*/
     height: 60px;
 }
 .info-block__text {
-    max-width: 240px;
+    max-width: 245px;
     font-weight: bold;
 }
 .info-str {
@@ -661,7 +666,7 @@ a {
 .ab-test__line {
     width: 100%;
     max-width: 420px;
-    height: 1px;
+    height: 2px;
     background: #ccc;
 }
 
