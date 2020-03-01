@@ -720,8 +720,8 @@ a {
 }
 .slider-integration .slick-slide img{
     /*width: 270px !important;*/
-    height: 190px;
-    margin: 0 auto;
+    /*height: 190px;*/
+    /*margin: 0 auto;*/
 }
 .slider-integration__flex {
     display: flex;
