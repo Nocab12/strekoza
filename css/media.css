@@ -4,22 +4,18 @@
 
 }
 @media (max-width: 1900px) {
-    .history {
-        background: transparent;
-        padding: 0;
-        height: auto;
-    }
     .history-bg {
         padding: 0 20px;
     }
-    .history-bg2 {
-        background: #5568FF;
-        padding: 0 20px;
-    }
+    /*.history-bg2 {*/
+    /*    background: #5568FF;*/
+    /*    padding: 0 20px;*/
+    /*}*/
     .history-title {
-        padding-top: 50px;
+        padding-top: 350px;
     }
 }
+
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
     .header-top {
@@ -45,7 +41,7 @@
     }
     .our-work {
         background: url('../images/m-work-bg.png') no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         height: 100%;
     }
     .work__head {
@@ -58,6 +54,9 @@
     }
     .work__line {
         display: none;
+    }
+    .work-padding {
+        padding: 220px 0 278px;
     }
     .work-wrap {
         display: flex;
@@ -123,6 +122,10 @@
     }
     .slider-integration .slick-next, .slider-history .slick-next {
         right: -15px;
+        display: none !important;
+    }
+    .slick-prev {
+        display: none !important;
     }
     .ab-test__block-line {
         justify-content: center;
@@ -320,17 +323,13 @@
         background: #fff;
         color: #5568FF;
     }
-    .our-work {
-        background: #5568FF;
-        height: 100%;
-        margin-top: 0;
-    }
+
     .payment-block {
         flex-direction: column;
         align-items: flex-start;
     }
     .work-padding {
-        padding: 30px 0;
+        padding: 350px 0 278px;
     }
     .work__head {
         margin-top: 0;
@@ -380,17 +379,23 @@
     .ab-test__line {
         display: none;
     }
-    .type-company {
-        padding: 60px 20px 0;
-    }
+
     .profit {
         margin-top: 50px;
     }
     .ab-test {
         margin: 50px 0;
     }
+
     .history {
-        margin-top: 50px;
+        background: url(../images/m-history-bg.png) no-repeat;
+        background-size: 100% 120%;
+    }
+    .history-box {
+        padding-top: 50px;
+    }
+    .history-title {
+        padding-top: 100px;
     }
     .footer__member {
         display: block;
@@ -502,6 +507,14 @@
     .info-block {
         padding: 0;
     }
+    .our-work {
+        background: url("../images/s-our-work.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: 0;
+    }
+    .work-padding {
+        padding: 290px 0 220px;
+    }
     .btn-company {
         font-size: 14px;
         width: auto;
@@ -587,6 +600,10 @@
     .step-wrap__img_number {
         width: 67px;
         height: auto;
+    }
+    .history {
+        background: url(../images/s-history-bg.png) no-repeat;
+        background-size: 100% 110%;
     }
     .footer-menu {
         flex-wrap: wrap;
