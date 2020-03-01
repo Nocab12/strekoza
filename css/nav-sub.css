@@ -413,9 +413,7 @@ body.hc-nav-open {
     transform: rotate(-45deg)
 }
 
-.hc-offcanvas-nav a[href]:not([href="#"]) > span.nav-next {
-    border-left: 1px solid #2c5d8f
-}
+
 
 /*.hc-offcanvas-nav span.nav-next::before, .hc-offcanvas-nav li.nav-back span::before {*/
 /*    content: '';*/
