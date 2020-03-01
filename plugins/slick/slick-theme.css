@@ -78,7 +78,7 @@
 
 .slick-prev
 {
-    left: -15px;
+    left: -35px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -93,7 +93,7 @@
     display: block;
 }
 @media (max-width: 1600px) {
-    .slick-prev:before {
+    .slider-integration .slick-prev:before {
         content: '';
         background: url('../../images/sl-arrow-left.svg');
         width: 38px;
@@ -109,7 +109,7 @@
 
 .slick-next
 {
-    right: -20px;
+    right: -35px;
 }
 [dir='rtl'] .slick-next
 {
